@@ -1701,14 +1701,15 @@ form {
 	margin-left: -1.563vw;
 	display: flex;
 	align-items: center;
+	position: relative;
 }
-.menu a {
+.menu > li > a {
 	height: 4.688vw;
 	display: flex;
 	align-items: center;
 	position: relative;
 }
-.menu a::before {
+.menu > li > a::before {
 	position: absolute;
 	display: block;
 	content: " ";
@@ -1720,9 +1721,38 @@ form {
 	transition: all 0.3s;
 	opacity: 0;
 }
-.menu li:hover a::before {
+.menu > li:hover > a::before {
 	opacity: 1;
 }
 .header__line:nth-child(2) {
 	padding: 0;
+}
+.menu__dropdown {
+	width: 21.302vw;
+	padding: 3.333vw 4.167vw;
+	margin-top: 1.042vw;
+	top: 100%;
+	left: -15px;
+	max-height: calc(100vh - 11.094vw);
+	box-shadow: 0 0.208vw 1.667vw 0 rgba(99, 89, 47, 0.08);
+	background: #fbfaf6;
+	overflow: auto;
+	position: absolute;
+	z-index: 100;
+	display: none;
+}
+.menu__list > li {
+	margin-bottom: 1.667vw;
+}
+.menu__list > li > a {
+	font-size: 0.938vw;
+	color: #38332f;
+	font-weight: 500;
+	text-transform: none;
+	letter-spacing: normal;
+	border-bottom: 1px #38332f solid;
+	position: relative;
+}
+.menu__list ul {
+	display: none;
 }

@@ -321,6 +321,11 @@
         line-height: 120%;
         margin-top: 24px;
     }
+    .form-page .checkbox {
+        max-width: 263px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .checkbox label input {
         position: absolute;
         z-index: -1;
@@ -351,8 +356,8 @@
     }
     .title-vertical {
         font-size: 12px;
-        gap: 24px;
-        top: 370px;
+        gap: 16px;
+        top: 387px;
         left: 16px;
     }
     .title-vertical::before {

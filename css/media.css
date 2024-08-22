@@ -845,7 +845,6 @@
         justify-content: center;
         text-align: center;
     }
-    .unit-dropdown__list li a:hover,
     .unit-dropdown__list li.active a {
         background: #d37e3e;
         border-color: #d37e3e;

@@ -23,9 +23,10 @@
     .logo img {
         width: 153px;
     }
+    .billbord__wrap,
     .billbord__slider,
     .billbord__slide {
-        height: 850px;
+        height: 750px;
     }
     .hidden-mob {
         display: none !important;
@@ -119,8 +120,7 @@
         font-size: 18px;
     }
     .billbord__wrap {
-        padding-top: 255px;
-        height: 852px;
+        padding-top: 220px;
     }
     .billbord__descr {
         font-size: 14px;

@@ -309,7 +309,7 @@ form {
 .menu a {
 	color: rgba(225, 214, 194, 0.64);
 }
-.menu a:hover {
+.menu li:hover a {
 	color: rgba(225, 214, 194, 1);
 }
 .header__line:nth-child(2) {
@@ -1695,4 +1695,34 @@ form {
 .item-dropdown__modal .item-dropdown__close {
 	top: 1.04vw;
 	right: 1.04vw;
+}
+.menu__catalog {
+	gap: 4.167vw;
+	margin-left: -1.563vw;
+	display: flex;
+	align-items: center;
+}
+.menu a {
+	height: 4.688vw;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.menu a::before {
+	position: absolute;
+	display: block;
+	content: " ";
+	height: 0.156vw;
+	width: 100%;
+	top: -0.104vw;
+	left: 0;
+	background: #ae5323;
+	transition: all 0.3s;
+	opacity: 0;
+}
+.menu li:hover a::before {
+	opacity: 1;
+}
+.header__line:nth-child(2) {
+	padding: 0;
 }

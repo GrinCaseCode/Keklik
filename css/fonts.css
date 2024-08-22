@@ -1,0 +1,45 @@
+@font-face {
+	font-family: 'Forum';
+	src: url('../fonts/Forum.eot');
+	src: url('../fonts/Forum.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Forum.woff') format('woff'),
+	url('../fonts/Forum.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway-Light.eot');
+	src: url('../fonts/Raleway-Light.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Raleway-Light.woff') format('woff'),
+	url('../fonts/Raleway-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/RalewayRegular.eot');
+	src: url('../fonts/RalewayRegular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/RalewayRegular.woff') format('woff'),
+	url('../fonts/RalewayRegular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway-Medium.eot');
+	src: url('../fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Raleway-Medium.woff') format('woff'),
+	url('../fonts/Raleway-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway-SemiBold.eot');
+	src: url('../fonts/Raleway-SemiBold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Raleway-SemiBold.woff') format('woff'),
+	url('../fonts/Raleway-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}

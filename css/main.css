@@ -1579,3 +1579,120 @@ form {
 .socials-fixed a:hover img {
 	filter: brightness(0) invert(1);
 }
+.item-dropdown__popup {
+	padding: 3.33vw;
+	width: 48.54vw;
+	max-width: 100%;
+	min-height: 19.06vw;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 0.21vw 1.67vw 0 rgba(99, 89, 47, 0.08);
+	background: #fbfaf6;
+	position: fixed;
+	z-index: 400;
+}
+.item-dropdown__overlay {
+	z-index: 300;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(56, 51, 47, 0.16);
+}
+.item-dropdown .title-middle {
+	margin-bottom: 2.19vw;
+	text-align: center;
+}
+.item-dropdown__popup ul {
+	gap: 0.42vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.item-dropdown__popup ul a {
+	border-radius: 3.33vw;
+	padding: 0.83vw 3.33vw;
+	font-size: 0.94vw;
+	line-height: 1.09vw;
+	letter-spacing: 0.03em;
+	font-weight: 500;
+	display: block;
+	color: rgba(56, 51, 47, 0.64);
+	background: rgba(225, 214, 194, 0.32);
+}
+.item-dropdown__popup ul .active a {
+	background: #d37e3e;
+	color: #fff;
+	font-weight: 700;
+}
+.item-dropdown__popup ul a:hover {
+	background: #d37e3e;
+	color: #fff;
+}
+.item-dropdown__close {
+	width: 0.729vw;
+	height: 0.729vw;
+	top: 1.56vw;
+	right: 1.56vw;
+	cursor: pointer;
+	opacity: 0.64;
+	background-image: url(../img/close.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	transition: all 0.3s;
+}
+.item-dropdown__close:hover {
+	opacity: 1;
+}
+.item-dropdown__overlay,
+.item-dropdown__popup {
+	display: none;
+}
+.item-dropdown_location .item-dropdown__value i {
+	transform: none !important;
+}
+.body_noscroll {
+	overflow: hidden;
+}
+.item-dropdown__modal {
+	padding: 1.67vw;
+	width: 19.53vw;
+	text-align: center;
+    top: -1.2vw;
+    left: -3.33vw;
+	box-shadow: 0 0.21vw 1.67vw 0 rgba(99, 89, 47, 0.08);
+	background: #fff;
+	position: absolute;
+	z-index: 10;
+	display: none;
+}
+.item-dropdown__head {
+	font-size: 0.94vw;
+	margin-bottom: 1.25vw;
+	line-height: 130%;
+	letter-spacing: 0.03em;
+	color: rgba(56, 51, 47, 0.72);
+}
+.item-dropdown__head span {
+	font-weight: 500;
+	color: rgba(56, 51, 47, 0.96);
+}
+.item-dropdown__buttons {
+	gap: 0.42vw;
+	display: flex;
+	align-items: center;
+}
+.item-dropdown__buttons .btn-main {
+	flex-grow: 1;
+	padding: 0 0.52vw;
+	height: 2.76vw;
+}
+.item-dropdown__modal .item-dropdown__close {
+	top: 1.04vw;
+	right: 1.04vw;
+}

@@ -46,6 +46,40 @@ $(".navigation__haschild > a").click(function(e) {
 	$(this).parent().toggleClass("active");
 });
 
+$(".item-dropdown_location .item-dropdown__value").click(function(e) {
+	e.preventDefault();
+	$(".item-dropdown_location .item-dropdown__modal").fadeIn(200);
+});
+
+$(".close-location-modal").click(function(e) {
+	e.preventDefault();
+	$(".item-dropdown_location .item-dropdown__modal").fadeOut(200);
+});
+
+
+$(document).mouseup(function (e) {
+    var modalLocation = $(".item-dropdown__modal");
+    if (modalLocation.has(e.target).length === 0){
+		modalLocation.fadeOut(200);
+    }
+  });
+
+$(".btn-location-popup").click(function(e) {
+	e.preventDefault();
+	$(".item-dropdown_location .item-dropdown__popup").fadeIn(200);
+	$(".item-dropdown_location .item-dropdown__overlay").fadeIn(200);
+	$("body").addClass("body_noscroll");
+	$(".item-dropdown_location .item-dropdown__modal").fadeOut(200);
+});
+
+$(".item-dropdown__overlay, .item-dropdown__close").click(function(e) {
+	e.preventDefault();
+	$(".item-dropdown__popup").fadeOut(200);
+	$(".item-dropdown__overlay").fadeOut(200);
+	$(".item-dropdown__modal").fadeOut(200);
+	$("body").removeClass("body_noscroll");
+});
+
 	if ($('#time-picker').length > 0) {
 		const elem = document.getElementById('time-picker');
 		const picker = new Datepicker(elem, {

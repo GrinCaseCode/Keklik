@@ -866,9 +866,6 @@
         max-width: 145px;
         color: rgba(225, 214, 194, 0.64);
     }
-    .body_noscroll {
-        overflow: hidden;
-    }
     .header.active {
         background: #1d1a18;
     }

@@ -19,8 +19,8 @@
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="libs/vanillajs-datepicker-master/dist/css/datepicker.min.css">
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.2" />
-	<link rel="stylesheet" href="css/media.css?ver=1.2" />
+	<link rel="stylesheet" href="css/main.css?ver=1.3" />
+	<link rel="stylesheet" href="css/media.css?ver=1.3" />
 </head>
 <body>
 
@@ -62,9 +62,19 @@
 							</div>
 							<div class="header__item">
 								<p>Ваш город: </p>
-								<div class="item-dropdown">
+								<div class="item-dropdown item-dropdown_location">
 									<div class="item-dropdown__value">Ставрополь <i class="far fa-chevron-down"></i></div>
-									<div class="item-dropdown__content">
+									<div class="item-dropdown__modal">
+										<div class="item-dropdown__close"></div>
+										<div class="item-dropdown__head">Ваш город — <span>Ставрополь?</span></div>
+										<div class="item-dropdown__buttons">
+											<a href="#" class="btn-main close-location-modal">ДА</a>
+											<a href="#" class="btn-main btn-main_page btn-location-popup">выбрать <i class="fal fa-long-arrow-right"></i></a>
+										</div>
+									</div>
+									<div class="item-dropdown__popup">
+										<div class="item-dropdown__close"></div>
+										<div class="title-middle">Ваш город</div>
 										<ul>
 											<li class="active"><a href="#">Москва</a></li>
 											<li><a href="#">Санкт-Петербург</a></li>
@@ -77,6 +87,7 @@
 											<li><a href="#">Ростов-на-Дону</a></li>
 										</ul>
 									</div>
+									<div class="item-dropdown__overlay"></div>
 								</div>
 							</div>
 						</div>
@@ -1472,7 +1483,7 @@
 	<script src="libs/vanillajs-datepicker-master/dist/js/datepicker-full.min.js"></script>
 	<script src="libs/vanillajs-datepicker-master/dist/js/locales/ru.js"></script>
 	<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-	<script src="js/common.js?ver=1.2"></script>
+	<script src="js/common.js?ver=1.3"></script>
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>

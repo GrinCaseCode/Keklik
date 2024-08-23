@@ -1768,7 +1768,7 @@ form {
 	background-color: rgba(190, 176, 150, 0.32);
 }
 .header.fixed .menu__dropdown {
-	max-height: calc(100vh - 9.094vw);
+	max-height: calc(100vh - 8.094vw);
 }
 .menu__list > li {
 	margin-bottom: 1.667vw;

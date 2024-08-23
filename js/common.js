@@ -93,14 +93,7 @@ $(document).mouseup(function (e) {
     }
   });
 
-  $(document).mouseup(function (e) {
-    var menuDropdown = $(".menu__dropdown");
-    if (menuDropdown.has(e.target).length === 0){
-		$(".menu__dropdown").slideUp(200);
-		$(".menu > li").removeClass("active");
-		$(".menu__overlay").fadeOut(200);
-    }
-  });
+
 
 $(".btn-location-popup").click(function(e) {
 	e.preventDefault();

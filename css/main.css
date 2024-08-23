@@ -241,6 +241,9 @@ form {
 .header.fixed {
 	background: #1d1a18;
 }
+.header.fixed .menu > li > a {
+	height: 3.688vw;
+}
 .header.fixed .header__line {
 	padding: 1vw 0;
 }
@@ -1745,7 +1748,7 @@ form {
 	z-index: 200;
 }
 .header.fixed .menu__overlay {
-	top: 9.063vw;
+	top: 8.063vw;
 }
 .menu__dropdown::-webkit-scrollbar {
 	-webkit-appearance: none;

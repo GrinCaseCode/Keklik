@@ -237,6 +237,7 @@ form {
 	color: rgba(225, 214, 194, 0.64);
 	transition: all 0.3s;
 }
+.wrapper_page .header,
 .header.fixed {
 	background: #1d1a18;
 }
@@ -1700,7 +1701,7 @@ form {
 }
 .menu__catalog {
 	gap: 4.167vw;
-	margin-left: -1.563vw;
+	margin-left: -2.563vw;
 	display: flex;
 	align-items: center;
 	position: relative;
@@ -1734,7 +1735,7 @@ form {
 	width: 21.302vw;
 	padding: 3.333vw 4.167vw;
 	top: 100%;
-	left: -0.781vw;
+	left: -5.885vw;
 	max-height: calc(100vh - 10.094vw);
 	box-shadow: 0 0.208vw 1.667vw 0 rgba(99, 89, 47, 0.08);
 	background: #fbfaf6;
@@ -1847,4 +1848,64 @@ form {
 	right: 0;
 	height: 100%;
 	z-index: 2;
+}
+.header .container {
+	max-width: 93.333vw;
+}
+
+.breadcrumbs {
+	padding-top: 95px;
+	padding-bottom: 43px;
+	color: #beb096;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.breadcrumbs a {
+	color: #beb096;
+	border-bottom: 1px solid #beb096;
+}
+.breadcrumbs a:hover {
+	border-color: transparent;
+}
+.breadcrumbs li::after {
+	content: "/";
+	margin: 0 10px;
+}
+.breadcrumbs li:last-child::after {
+	display: none;
+}
+.page-catalog .title-section {
+	margin-bottom: 72px;
+}
+.tabs-catalog {
+	margin-bottom: 16px;
+	gap: 8px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.tabs-catalog a {
+	height: 53px;
+	padding: 0 64px;
+	font-size: 18px;
+	font-weight: 500;
+	color: rgba(56, 51, 47, 0.64);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-radius: 64px;
+	background: rgba(225, 214, 194, 0.32);
+}
+.tabs-catalog a:hover,
+.tabs-catalog .active a {
+	background: #d37e3e;
+	color: #fff;
+}
+.tabs-catalog .active a {
+	font-weight: 700;
+}
+.wrapper_page {
+	padding-top: 196px;
 }

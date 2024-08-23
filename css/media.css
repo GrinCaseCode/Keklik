@@ -878,6 +878,9 @@
     .socials-fixed {
         display: none;
     }
+    .header .container {
+        max-width: 100%;
+    }    
 }
 
 /* Small Devices, Tablets */

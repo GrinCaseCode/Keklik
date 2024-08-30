@@ -1,5 +1,107 @@
 $(document).ready(function() {
 
+	$(".dropdown-filter__head").click(function() {
+		$(".dropdown-filter__content").slideUp(200);
+		$(".dropdown-filter").removeClass("active");
+		if ($(this).siblings(".dropdown-filter__content").is(":hidden")) {
+			$(this).siblings(".dropdown-filter__content").slideDown(200);
+			$(this).parent().addClass("active");
+		} else {
+			$(this).siblings(".dropdown-filter__content").slideUp(200);
+			$(this).parent().removeClass("active");
+		}
+	});
+
+	$(".show-more-filter").click(function(e) {
+		e.preventDefault();
+		$(".hidden-filter").slideToggle(200);
+		$(this).toggleClass("active");
+	});
+
+	$(document).mouseup(function (e) {
+		var container = $(".dropdown-filter");
+		if (container.has(e.target).length === 0){
+			$(".dropdown-filter__content").slideUp(200);
+			$(".dropdown-filter").removeClass("active");
+		}
+	  });
+
+	//custom scroll
+	$('.dropdown-filter__list').each(function() {
+		var $block = $(this);
+	
+		// Создаем структуру для скроллбара
+		if (!$block.hasClass('initialized')) {
+			$block.wrapInner('<div class="my-block-content"></div>');
+			$block.append('<div class="my-block-scrollbar"><div class="my-block-scrollbar-thumb"></div></div>');
+			$block.addClass('initialized'); // Чтобы избежать двойной инициализации
+		}
+	
+		var $content = $block.find('.my-block-content');
+		var $scrollbar = $block.find('.my-block-scrollbar');
+		var $thumb = $scrollbar.find('.my-block-scrollbar-thumb');
+	
+		function updateThumbPosition() {
+			var contentHeight = $content[0].scrollHeight;
+			var blockHeight = $block.height();
+			var scrollRatio = (blockHeight - $thumb.height()) / (contentHeight - blockHeight);
+	
+			if (contentHeight <= blockHeight + 40) {
+				$scrollbar.hide(); // Скрываем скроллбар если весь контент помещается
+			} else {
+				$scrollbar.show(); // Показываем скроллбар если контент больше видимой области
+			}
+	
+			var scrollTop = $content.scrollTop();
+			var thumbTop = scrollTop * scrollRatio;
+			$thumb.css('top', thumbTop + 'px');
+		}
+	
+		$content.on('scroll', function() {
+			updateThumbPosition();
+		});
+	
+		$thumb.on('mousedown', function(e) {
+			var startY = e.pageY;
+			var startTop = parseInt($thumb.css('top'), 10);
+			var contentHeight = $content[0].scrollHeight;
+			var blockHeight = $block.height();
+			var scrollRatio = (blockHeight - $thumb.height()) / (contentHeight - blockHeight);
+	
+			$(document).on('mousemove.thumb', function(e) {
+				var deltaY = e.pageY - startY;
+				var newTop = startTop + deltaY;
+				var maxTop = blockHeight - $thumb.height();
+	
+				newTop = Math.max(0, Math.min(newTop, maxTop));
+				$thumb.css('top', newTop + 'px');
+	
+				var scrollTop = newTop / scrollRatio;
+				$content.scrollTop(scrollTop);
+			});
+	
+			$(document).on('mouseup.thumb', function() {
+				$(document).off('mousemove.thumb mouseup.thumb');
+			});
+	
+			e.preventDefault();
+		});
+
+		$(".dropdown-filter__head").click(function() {
+			updateThumbPosition();
+		});
+	
+		updateThumbPosition(); // Обновляем позицию ползунка и видимость скроллбара при загрузке
+	});
+	
+	
+	$(".value-select").click(function() {
+		var textVal = $(this).html();
+		$(this).parents(".dropdown-filter").find(".dropdown-filter__head").html(textVal);
+		$(".dropdown-filter__content").slideUp(200);
+		$(".dropdown-filter").removeClass("active");
+	});
+	
 
 //прилипающие меню
 var $menu = $(".header");

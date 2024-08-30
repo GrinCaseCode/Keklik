@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
+	<link rel="stylesheet" href="libs/fontawesome-free-5.12.0-web/css/all.min.css" />
+	<link rel="stylesheet" href="libs/fancybox-master/dist/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
+	<link rel="stylesheet" href="libs/vanillajs-datepicker-master/dist/css/datepicker.min.css">
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/main.css?ver=1.7" />
+	<link rel="stylesheet" href="css/media.css?ver=1.7" />
+</head>
+<body>
+
+	<div class="wrapper wrapper_page">
+
+		<div class="buttons-fixed">
+			<a href="#" class="btn-fixed"><img src="img/btn_search.svg" alt="alt"></a>
+			<a href="#" class="btn-fixed"><img src="img/btn_like.svg" alt="alt"></a>
+			<a href="#" class="btn-fixed"><img src="img/btn_tg.svg" alt="alt"></a>
+			<a href="#" class="btn-fixed"><img src="img/btn_user.svg" alt="alt"></a>
+		</div>
+
+		<ul class="socials-fixed">
+			<li><a href="#" target="_blank"><img src="img/ic_tg.svg" alt="alt"></a></li>
+			<li><a href="#" target="_blank"><img src="img/ic_vk.svg" alt="alt"></a></li>
+			<li><a href="#" target="_blank"><img src="img/ic_tel.svg" alt="alt"></a></li>
+			<li><a href="#" target="_blank"><img src="img/ic_wp.svg" alt="alt"></a></li>
+		</ul>
+ 
+		<header class="header default">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-5 col-2">
+						<div class="header__line">
+							<div class="header__item">
+								<p>Язык:</p>
+								<div class="item-dropdown item-dropdown_language">
+									<div class="item-dropdown__value">РУС <i class="far fa-chevron-down"></i></div>
+									<div class="item-dropdown__content">
+										<ul>
+											<li class="active"><a href="#">Русский</a></li>
+											<li><a href="#">English</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="header__item">
+								<p>Ставрополь, <br>ул. Объездная 2а </p>
+							</div>
+							<div class="header__item">
+								<p>Ваш город: </p>
+								<div class="item-dropdown item-dropdown_location">
+									<div class="item-dropdown__value">Ставрополь <i class="far fa-chevron-down"></i></div>
+									<div class="item-dropdown__modal">
+										<div class="item-dropdown__close"></div>
+										<div class="item-dropdown__head">Ваш город — <span>Ставрополь?</span></div>
+										<div class="item-dropdown__buttons">
+											<a href="#" class="btn-main close-location-modal">ДА</a>
+											<a href="#" class="btn-main btn-main_page btn-location-popup">выбрать <i class="fal fa-long-arrow-right"></i></a>
+										</div>
+									</div>
+									<div class="item-dropdown__popup">
+										<div class="item-dropdown__close"></div>
+										<div class="title-middle">Ваш город</div>
+										<ul>
+											<li class="active"><a href="#">Москва</a></li>
+											<li><a href="#">Санкт-Петербург</a></li>
+											<li><a href="#">Волгоград</a></li>
+											<li><a href="#">Саратов</a></li>
+											<li><a href="#">Воронеж</a></li>
+											<li><a href="#">Симферополь</a></li>
+											<li><a href="#">Севастополь</a></li>
+											<li><a href="#">Краснодар</a></li>
+											<li><a href="#">Ростов-на-Дону</a></li>
+										</ul>
+									</div>
+									<div class="item-dropdown__overlay"></div>
+								</div>
+							</div>
+						</div>
+						<div class="header__line">
+							<span class='sandwich sandwich_mobile'>
+								<span class='sw-topper'></span>
+								<span class='sw-bottom'></span>
+								<span class='sw-footer'></span>
+							</span> 
+							<ul class="menu">
+								<li class="menu__catalog">
+									<span class='sandwich sandwich_catalog'>
+										<span class='sw-topper'></span>
+										<span class='sw-bottom'></span>
+										<span class='sw-footer'></span>
+									</span>
+									<a href="#">каталог</a>
+									<div class="menu__dropdown">
+										<div class="menu__close"></div>
+										<ul class="menu__list">
+											<li class="menu__haschild">
+												<a href="#">Каталог товаров</a>
+												<ul>
+													<li><a href="#">Браслеты</a></li>
+													<li><a href="#">Анклеты</a></li>
+													<li><a href="#">Подвески на шею</a></li>
+													<li><a href="#">Подвески на телефон</a></li>
+													<li><a href="#">Обвесы на сумку</a></li>
+													<li><a href="#">Подвески на сумку</a></li>
+													<li><a href="#">Подвески в машину/дом</a></li>
+													<li><a href="#">Чокеры</a></li>
+													<li><a href="#">Колье</a></li>
+													<li><a href="#">Кулоны</a></li>
+													<li><a href="#">Маятники</a></li>
+													<li><a href="#">Серьги</a></li>
+													<li><a href="#">Кольца</a></li>
+													<li><a href="#">Перстни</a></li>
+													<li><a href="#">Фигурки</a></li>
+													<li><a href="#">Брелоки</a></li>
+													<li><a href="#">Камни</a></li>
+													<li><a href="#">Шары</a></li>
+													<li><a href="#">Шпильки для волос</a></li>
+													<li><a href="#">Бусы</a></li>
+													<li><a href="#">Четки</a></li>
+												</ul>
+											</li>
+											<li class="menu__haschild">
+												<a href="#">Каталог камней</a>
+												<ul>
+													<li><a href="#">Браслеты</a></li>
+													<li><a href="#">Анклеты</a></li>
+													<li><a href="#">Подвески на шею</a></li>
+													<li><a href="#">Подвески на телефон</a></li>
+													<li><a href="#">Обвесы на сумку</a></li>
+													<li><a href="#">Подвески на сумку</a></li>
+													<li><a href="#">Подвески в машину/дом</a></li>
+													<li><a href="#">Чокеры</a></li>
+													<li><a href="#">Колье</a></li>
+													<li><a href="#">Кулоны</a></li>
+													<li><a href="#">Маятники</a></li>
+													<li><a href="#">Серьги</a></li>
+													<li><a href="#">Кольца</a></li>
+													<li><a href="#">Перстни</a></li>
+													<li><a href="#">Фигурки</a></li>
+													<li><a href="#">Брелоки</a></li>
+													<li><a href="#">Камни</a></li>
+													<li><a href="#">Шары</a></li>
+													<li><a href="#">Шпильки для волос</a></li>
+													<li><a href="#">Бусы</a></li>
+													<li><a href="#">Четки</a></li>
+												</ul>
+											</li>
+											<li><a href="#">О компании</a></li>
+											<li><a href="#">Статьи</a></li>
+											<li><a href="#">Подарочный сертификат</a></li>
+											<li class="menu__haschild">
+												<a href="#">Информация для клиентов</a>
+												<ul>
+													<li><a href="#">Браслеты</a></li>
+													<li><a href="#">Анклеты</a></li>
+													<li><a href="#">Подвески на шею</a></li>
+													<li><a href="#">Подвески на телефон</a></li>
+													<li><a href="#">Обвесы на сумку</a></li>
+													<li><a href="#">Подвески на сумку</a></li>
+													<li><a href="#">Подвески в машину/дом</a></li>
+													<li><a href="#">Чокеры</a></li>
+													<li><a href="#">Колье</a></li>
+													<li><a href="#">Кулоны</a></li>
+													<li><a href="#">Маятники</a></li>
+													<li><a href="#">Серьги</a></li>
+													<li><a href="#">Кольца</a></li>
+													<li><a href="#">Перстни</a></li>
+													<li><a href="#">Фигурки</a></li>
+													<li><a href="#">Брелоки</a></li>
+													<li><a href="#">Камни</a></li>
+													<li><a href="#">Шары</a></li>
+													<li><a href="#">Шпильки для волос</a></li>
+													<li><a href="#">Бусы</a></li>
+													<li><a href="#">Четки</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+									<div class="menu__overlay"></div>
+								</li>
+								<li><a href="#">Индивидуальные украшения</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-2 col-8">
+						<a href="#" class="logo">
+							<img src="img/logo.svg" alt="alt">
+						</a>
+						<div class="logo-descr">Украшения ручной работы из натуральных камней </div>
+					</div>
+					<div class="col-lg-5 col-2">
+						<div class="header__line">
+							<div class="header__links">
+								<a href="tel:+79682675223" class="phone-main">+7 968 267 52 23</a>
+								<a href="#" class="link-page">заказать звонок</a>
+							</div>
+							<div class="header__buttons">
+								<a href="#" class="btn-header hidden-mob">
+									<img src="img/search.svg" alt="alt">
+								</a>
+								<a href="#" class="btn-header hidden-mob">
+									<img src="img/heart.svg" alt="alt">
+								</a>
+								<a href="#" class="btn-header">
+									<img src="img/basket.svg" alt="alt">
+								</a>
+								<a href="#" class="btn-header hidden-mob">
+									<img src="img/user.svg" alt="alt">
+								</a>
+							</div>
+						</div>
+						<div class="header__line">
+							<ul class="menu">
+								<li><a href="#">Браслеты</a></li>
+								<li><a href="#">Кольца</a></li>
+								<li><a href="#">Серьги</a></li>
+								<li><a href="#">ПодвескИ</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="menu-mobile">
+				<ul class="navigation">
+					<li class="navigation__haschild">
+						<a href="#">Каталог товаров</a>
+						<ul>
+							<li><a href="#">Браслеты</a></li>
+							<li><a href="#">Анклеты</a></li>
+							<li><a href="#">Подвески на шею</a></li>
+							<li><a href="#">Подвески на телефон</a></li>
+							<li><a href="#">Обвесы на сумку</a></li>
+							<li><a href="#">Подвески на сумку</a></li>
+							<li><a href="#">Подвески в машину/дом</a></li>
+							<li><a href="#">Чокеры</a></li>
+							<li><a href="#">Колье</a></li>
+							<li><a href="#">Кулоны</a></li>
+							<li><a href="#">Маятники</a></li>
+							<li><a href="#">Серьги</a></li>
+							<li><a href="#">Кольца</a></li>
+							<li><a href="#">Перстни</a></li>
+							<li><a href="#">Фигурки</a></li>
+							<li><a href="#">Брелоки</a></li>
+							<li><a href="#">Камни</a></li>
+							<li><a href="#">Шары</a></li>
+							<li><a href="#">Шпильки для волос</a></li>
+							<li><a href="#">Бусы</a></li>
+							<li><a href="#">Четки</a></li>
+						</ul>
+					</li>
+					<li class="navigation__haschild">
+						<a href="#">Каталог камней</a>
+						<ul>
+							<li><a href="#">Браслеты</a></li>
+							<li><a href="#">Анклеты</a></li>
+							<li><a href="#">Подвески на шею</a></li>
+							<li><a href="#">Подвески на телефон</a></li>
+							<li><a href="#">Обвесы на сумку</a></li>
+							<li><a href="#">Подвески на сумку</a></li>
+							<li><a href="#">Подвески в машину/дом</a></li>
+							<li><a href="#">Чокеры</a></li>
+							<li><a href="#">Колье</a></li>
+							<li><a href="#">Кулоны</a></li>
+							<li><a href="#">Маятники</a></li>
+							<li><a href="#">Серьги</a></li>
+							<li><a href="#">Кольца</a></li>
+							<li><a href="#">Перстни</a></li>
+							<li><a href="#">Фигурки</a></li>
+							<li><a href="#">Брелоки</a></li>
+							<li><a href="#">Камни</a></li>
+							<li><a href="#">Шары</a></li>
+							<li><a href="#">Шпильки для волос</a></li>
+							<li><a href="#">Бусы</a></li>
+							<li><a href="#">Четки</a></li>
+						</ul>
+					</li>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Статьи</a></li>
+					<li><a href="#">Подарочный сертификат</a></li>
+					<li class="navigation__haschild">
+						<a href="#">Информация для клиентов</a>
+						<ul>
+							<li><a href="#">Браслеты</a></li>
+							<li><a href="#">Анклеты</a></li>
+							<li><a href="#">Подвески на шею</a></li>
+							<li><a href="#">Подвески на телефон</a></li>
+							<li><a href="#">Обвесы на сумку</a></li>
+							<li><a href="#">Подвески на сумку</a></li>
+							<li><a href="#">Подвески в машину/дом</a></li>
+							<li><a href="#">Чокеры</a></li>
+							<li><a href="#">Колье</a></li>
+							<li><a href="#">Кулоны</a></li>
+							<li><a href="#">Маятники</a></li>
+							<li><a href="#">Серьги</a></li>
+							<li><a href="#">Кольца</a></li>
+							<li><a href="#">Перстни</a></li>
+							<li><a href="#">Фигурки</a></li>
+							<li><a href="#">Брелоки</a></li>
+							<li><a href="#">Камни</a></li>
+							<li><a href="#">Шары</a></li>
+							<li><a href="#">Шпильки для волос</a></li>
+							<li><a href="#">Бусы</a></li>
+							<li><a href="#">Четки</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="unit-dropdown">
+					<div class="unit-dropdown__head">Язык: <span>РУС</span></div>
+					<div class="unit-dropdown__content">
+						<div class="unit-dropdown__wrap">
+							<a href="#" class="item-language active">Русский</a>
+							<a href="#" class="item-language">English</a>
+						</div>
+					</div>
+				</div>
+				<div class="unit-dropdown">
+					<div class="unit-dropdown__head">Город: <span>Ставрополь</span></div>
+					<div class="unit-dropdown__content">
+						<ul class="unit-dropdown__list">
+							<li class="active"><a href="#">Москва</a></li>
+							<li><a href="#">Санкт-Петербург</a></li>
+							<li><a href="#">Волгоград</a></li>
+							<li><a href="#">Саратов</a></li>
+							<li><a href="#">Воронеж</a></li>
+							<li><a href="#">Симферополь</a></li>
+							<li><a href="#">Севастополь</a></li>
+							<li><a href="#">Краснодар</a></li>
+							<li><a href="#">Ростов-на-Дону</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="menu-mobile__bottom">
+					<div class="menu-mobile__location">Ставрополь, <br>ул. Объездная 2а </div>
+					<div class="header__links">
+						<a href="tel:+79682675223" class="phone-main">+7 968 267 52 23</a>
+						<a href="#" class="link-page">заказать звонок</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="page-catalog">
+			<div class="container">
+				<ul class="breadcrumbs">
+					<li><a href="#">Главная</a></li>
+					<li>Каталог камней</li>
+				</ul>
+				<h1 class="title-section">Каталог камней</h1>
+				<div class="head-catalog">
+					<div class="search-page">
+						<form>
+							<input type="text" placeholder="Поиск по названию" required="required">
+							<button class="search-page__btn"></button>
+						</form>
+					</div>
+					<div class="dropdown-filter dropdown-filter_select">
+						<div class="dropdown-filter__head">По возрастанию А-Я</div>
+						<div class="dropdown-filter__content">
+							<div class="dropdown-filter__list">
+								<div class="value-select">По возрастанию А-Я</div>
+								<div class="value-select">По спаданию А-Я</div>
+								<div class="value-select">По цене</div>
+							</div>
+						</div>
+					</div>
+					<ul class="views-catalog">
+						<li>
+							<a href="#" class="item-view active">
+								<img src="img/view_list.svg" alt="alt">
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item-view">
+								<img src="img/view_grid.svg" alt="alt">
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="list-catalog">
+					<div class="item-list">
+						<div class="item-list__value">А</div>
+						<ul>
+							<li><a href="#">Авантюрин</a></li>
+							<li><a href="#">Азурмалахит</a></li>
+							<li><a href="#">Аквакварц</a></li>
+							<li><a href="#">Аквамарин</a></li>
+							<li><a href="#">Аметрин</a></li>
+							<li><a href="#">Ангелит</a></li>
+							<li><a href="#">Апатит</a></li>
+							<li><a href="#">Адуляр</a></li>
+							<li><a href="#">Амазонит</a></li>
+						</ul>
+					</div>
+					<div class="item-list">
+						<div class="item-list__value">Б</div>
+						<ul>
+							<li><a href="#">Белый нефрит</a></li>
+							<li><a href="#">Берилл</a></li>
+							<li><a href="#">Бирюза</a></li>
+							<li><a href="#">Бычий глаз</a></li>
+						</ul>
+					</div>
+
+					<div class="item-list">
+						<div class="item-list__value">В</div>
+						<ul>
+							<li><a href="#">Варисцит</a></li>
+							<li><a href="#">Вулканит</a></li>
+						</ul>
+					</div>
+					<div class="item-list">
+						<div class="item-list__value">Г</div>
+						<ul>
+							<li><a href="#">Гагат</a></li>
+							<li><a href="#">Гелиотроп</a></li>
+							<li><a href="#">Гематит</a></li>
+							<li><a href="#">Горный хрусталь</a></li>
+							<li><a href="#">Гранат</a></li>
+							<li><a href="#">Гиперстен</a></li>
+						</ul>
+					</div>
+					<div class="item-list">
+						<div class="item-list__value">Ж</div>
+						<ul>
+							<li><a href="#">Жадеит</a></li>
+							<li><a href="#">Жемчуг</a></li>
+						</ul>
+					</div>
+					<div class="item-list">
+						<div class="item-list__value">З</div>
+						<ul>
+							<li><a href="#">Зеленый гранат</a></li>
+						</ul>
+					</div>
+					<div class="item-list">
+						<div class="item-list__value">И</div>
+						<ul>
+							<li><a href="#">Изумруд</a></li>
+						</ul>
+					</div>
+					<div class="item-list">
+						<div class="item-list__value">К</div>
+						<ul>
+							<li><a href="#">Кахолонг</a></li>
+							<li><a href="#">Кианит</a></li>
+							<li><a href="#">Клубничный кварц</a></li>
+							<li><a href="#">Коралл</a></li>
+							<li><a href="#">Коричневая яшма</a></li>
+							<li><a href="#">Кошачий глаз</a></li>
+						</ul>
+					</div>
+					<div class="item-list">
+						<div class="item-list__value">Л</div>
+						<ul>
+							<li><a href="#">Лабрадор</a></li>
+							<li><a href="#">Лазурит</a></li>
+						</ul>
+					</div>
+					<div class="item-list">
+						<div class="item-list__value">М</div>
+						<ul>
+							<li><a href="#">Малахит</a></li>
+							<li><a href="#">Морион</a></li>
+						</ul>
+					</div>
+					<div class="item-list">
+						<div class="item-list__value">Н</div>
+						<ul>
+							<li><a href="#">Нефрит</a></li>
+						</ul>
+					</div>
+					<div class="item-list">
+						<div class="item-list__value">О</div>
+						<ul>
+							<li><a href="#">Обсидиан</a></li>
+							<li><a href="#">Окаменелое дерево</a></li>
+						</ul>
+					</div>
+					<div class="item-list">
+						<div class="item-list__value">П</div>
+						<ul>
+							<li><a href="#">Перламутр</a></li>
+							<li><a href="#">Пирит</a></li>
+							<li><a href="#">Пренит</a></li>
+							<li><a href="#">Петерсит</a></li>
+						</ul>
+					</div>
+					<div class="item-list">
+						<div class="item-list__value">Р</div>
+						<ul>
+							<li><a href="#">Родонит</a></li>
+							<li><a href="#">Родохрозит</a></li>
+							<li><a href="#">Розовый агат</a></li>
+							<li><a href="#">Рубеллит</a></li>
+							<li><a href="#">Рутиловый кварц</a></li>
+							<li><a href="#">Раухтопаз</a></li>
+						</ul>
+					</div>
+					<div class="item-list">
+						<div class="item-list__value">С</div>
+						<ul>
+							<li><a href="#">Сакуровый агат</a></li>
+							<li><a href="#">Сапфирин</a></li>
+							<li><a href="#">Сахарный кварц</a></li>
+							<li><a href="#">Серафинит</a></li>
+							<li><a href="#">Сердолик</a></li>
+							<li><a href="#">Содалит</a></li>
+							<li><a href="#">Соколиный глаз</a></li>
+							<li><a href="#">Сугилит</a></li>
+							<li><a href="#">Соколиный глаз</a></li>
+							<li><a href="#">Солнечный камень</a></li>
+						</ul>
+					</div>
+					<div class="item-list">
+						<div class="item-list__value">Т</div>
+						<ul>
+							<li><a href="#">Турмалин</a></li>
+							<li><a href="#">Турмалиновый кварц</a></li>
+						</ul>
+					</div>
+					<div class="item-list">
+						<div class="item-list__value">У</div>
+						<ul>
+							<li><a href="#">Унакит яшма</a></li>
+						</ul>
+					</div>
+					<div class="item-list">
+						<div class="item-list__value">Ф</div>
+						<ul>
+							<li><a href="#">Фантомный кварц</a></li>
+							<li><a href="#">Флюорит</a></li>
+						</ul>
+					</div>
+					<div class="item-list">
+						<div class="item-list__value">Х</div>
+						<ul>
+							<li><a href="#">Халькопирит</a></li>
+							<li><a href="#">Хаулит</a></li>
+							<li><a href="#">Хризоколла</a></li>
+							<li><a href="#">Хризопраз</a></li>
+						</ul>
+					</div>
+					<div class="item-list">
+						<div class="item-list__value">Ц</div>
+						<ul>
+							<li><a href="#">Циозит</a></li>
+							<li><a href="#">Цитрин</a></li>
+						</ul>
+					</div>
+					<div class="item-list">
+						<div class="item-list__value">Ч</div>
+						<ul>
+							<li><a href="#">Чароит</a></li>
+						</ul>
+					</div>
+					<div class="item-list">
+						<div class="item-list__value">Я</div>
+						<ul>
+							<li><a href="#">Янтарь</a></li>
+							<li><a href="#">Яшма</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3">
+						<a href="#" class="logo">
+							<img src="img/logo2.svg" alt="alt">
+						</a>
+						<div class="logo-descr">Украшения ручной работы из натуральных камней </div>
+						<ul class="list-socials">
+							<li><a href="#" target="_blank"><img src="img/vk.svg" alt="alt"></a></li>
+							<li><a href="#" target="_blank"><img src="img/tg.svg" alt="alt"></a></li>
+							<li><a href="#" target="_blank"><img src="img/yt.svg" alt="alt"></a></li>
+							<li><a href="#" target="_blank"><img src="img/wp.svg" alt="alt"></a></li>
+						</ul>
+					</div>
+					<div class="col-lg-2">
+						<ul class="footer__menu">
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Привилегии</a></li>
+							<li><a href="#">Доставка и оплата</a></li>
+							<li><a href="#">Гарантия и обен</a></li>
+							<li><a href="#">Статьи</a></li>
+							<li><a href="#">Камни</a></li>
+							<li><a href="#">Подарочный сертификат</a></li>
+							<li><a href="#">Возврат</a></li>
+							<li><a href="#">Услуги по ремонту</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-4">
+						<div class="footer__title">Каталог</div>
+						<div class="nav-wrap hidden-mob">
+							<ul class="footer__nav">
+								<li><a href="#">Браслеты</a></li>
+								<li><a href="#">Анклеты</a></li>
+								<li><a href="#">Подвески на шею</a></li>
+								<li><a href="#">Подвески на телефон</a></li>
+								<li><a href="#">Обвесы на сумку</a></li>
+								<li><a href="#">Подвески на сумку</a></li>
+								<li><a href="#">Подвески в машину/дом</a></li>
+								<li><a href="#">Чокеры</a></li>
+							</ul>
+							<ul class="footer__nav">
+								<li><a href="#">Колье</a></li>
+								<li><a href="#">Кулоны</a></li>
+								<li><a href="#">Маятники</a></li>
+								<li><a href="#">Серьги</a></li>
+								<li><a href="#">Кольца</a></li>
+								<li><a href="#">Перстни</a></li>
+								<li><a href="#">Фигурки</a></li>
+								<li><a href="#">Брелоки</a></li>
+							</ul>
+							<ul class="footer__nav">
+								<li><a href="#">Камни</a></li>
+								<li><a href="#">Шары</a></li>
+								<li><a href="#">Шпильки для волос</a></li>
+								<li><a href="#">Бусы</a></li>
+								<li><a href="#">Четки</a></li>
+							</ul>
+						</div>
+						<div class="nav-wrap show-mob">
+							<ul class="footer__nav">
+								<li><a href="#">Браслеты</a></li>
+								<li><a href="#">Анклеты</a></li>
+								<li><a href="#">Подвески на шею</a></li>
+								<li><a href="#">Подвески на телефон</a></li>
+								<li><a href="#">Обвесы на сумку</a></li>
+								<li><a href="#">Подвески на сумку</a></li>
+								<li><a href="#">Подвески в машину/дом</a></li>
+								<li><a href="#">Чокеры</a></li>
+								<li><a href="#">Колье</a></li>
+								<li><a href="#">Кулоны</a></li>
+							</ul>
+							<ul class="footer__nav">
+								<li><a href="#">Маятники</a></li>
+								<li><a href="#">Серьги</a></li>
+								<li><a href="#">Кольца</a></li>
+								<li><a href="#">Перстни</a></li>
+								<li><a href="#">Фигурки</a></li>
+								<li><a href="#">Брелоки</a></li>
+								<li><a href="#">Камни</a></li>
+								<li><a href="#">Шары</a></li>
+								<li><a href="#">Шпильки для волос</a></li>
+								<li><a href="#">Бусы</a></li>
+								<li><a href="#">Четки</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="footer__title">контакты</div>
+						<div class="item-contact">
+							<div class="item-contact__title">Телефон:</div>
+							<div class="line-contacts">
+								<a href="tel:+79682675223" class="phone-main">+7 968 267 52 23</a>
+								<ul class="socials-contact">
+									<li><a href="#"><img src="img/soc1.svg" alt="alt"></a></li>
+									<li><a href="#"><img src="img/soc2.svg" alt="alt"></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="item-contact">
+							<div class="item-contact__title">Адрес:</div>
+							<p>г. Ставрополь, ул.Объездная, 2а</p>
+						</div>
+						<div class="item-contact">
+							<div class="item-contact__title">Рабочее время:</div>
+							<p>пн-пт с 9:00 до 17:00 </p>
+						</div>
+						<div class="item-contact">
+							<div class="item-contact__title">E-mail:</div>
+							<a href="mailto:keklik-braslets@yandex.ru" class="link-main">keklik-braslets@yandex.ru</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<a href="#">Политика конфиденциальности</a>
+					<div class="copyright">KEKLIK © Copyright 2024</div>
+					<div class="create">Сделано в <a href="#"><img src="img/sheer.svg" alt="alt"></a></div>
+				</div>
+			</div> 
+		</footer>
+		
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	<script src="libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+	<script src="libs/fancybox-master/dist/jquery.fancybox.min.js"></script>
+	<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
+	<script src="libs/scroll2id/PageScroll2id.min.js"></script>
+	<script src="libs/mask/jquery.maskedinput.js"></script>
+	<script src="libs/vanillajs-datepicker-master/dist/js/datepicker-full.min.js"></script>
+	<script src="libs/vanillajs-datepicker-master/dist/js/locales/ru.js"></script>
+	<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
+	<script src="js/common.js?ver=1.7"></script>
+	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>

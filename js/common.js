@@ -18,6 +18,27 @@ $(document).ready(function() {
 		$(this).toggleClass("active");
 	});
 
+
+	$(".btn-like").click(function(e) {
+		e.preventDefault();
+		$(this).toggleClass("active");
+	});
+
+
+  $(".card-dropdown__head").click(function() {
+    $(this).parent().toggleClass("active");
+    $(this).siblings().slideToggle(200);
+    $(this).parent().siblings(".card-dropdown").removeClass("active");
+    $(this).parent().siblings(".card-dropdown").find(".card-dropdown__content").slideUp(200);
+  });
+
+  $('.video-main').click(function() {
+	var videoURL = $(this).find("iframe").prop('src');
+	videoURL += "&autoplay=1";
+	$(this).find("iframe").prop('src',videoURL);
+	$(this).addClass("active");
+  });
+
 	$(document).mouseup(function (e) {
 		var container = $(".dropdown-filter");
 		if (container.has(e.target).length === 0){
@@ -480,6 +501,46 @@ $(".item-dropdown__overlay, .item-dropdown__close").click(function(e) {
 		prevArrow: '<div class="slick-prev slick-arrow"><i class="fal fa-long-arrow-left"></i><div/>',
 		nextArrow: '<div class="slick-next slick-arrow"><i class="fal fa-long-arrow-right"></i><div/>',
 	});
+
+	
+	
+
+	$('.slider-card').slick({
+		arrows: false,
+		dots: false,
+		infinite: true,
+		focusOnSelect: true,
+		touchThreshold: 1000,
+		asNavFor: '.nav-card',
+		slidesToShow: 1,
+		slidesToScroll: 1, 
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="fal fa-long-arrow-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fal fa-long-arrow-right"></i><div/>',
+	});
+
+	$('.slider-card').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+    var currentVideo = $(slick.$slides[currentSlide]).find('iframe');
+    if (currentVideo.length) {
+        var videoSrc = currentVideo.attr('src');
+        currentVideo.attr('src', ''); // Удаляем src, чтобы остановить видео
+        currentVideo.attr('src', videoSrc); // Восстанавливаем src, чтобы видео было готово к воспроизведению при возврате на слайд
+    }
+});
+
+	$('.nav-card').slick({
+		arrows: false,
+		dots: false,
+		infinite: true,
+		focusOnSelect: true,
+		touchThreshold: 1000,
+		asNavFor: '.slider-card',
+		slidesToShow: 4,
+		slidesToScroll: 1, 
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="fal fa-long-arrow-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fal fa-long-arrow-right"></i><div/>',
+	});
+
+	
 
 	$('.slider-list').each(function(index, element) {
 	

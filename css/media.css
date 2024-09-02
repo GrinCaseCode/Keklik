@@ -1227,14 +1227,14 @@
         font-size: 35px;
     }
     .card-info .price-main span {
-        font-size: 32px;
+        font-size: 30px;
     }
     .card-info .price-old {
         font-size: 16px;
     }
     .card-info .btn-main {
-        height: 70px;
-        padding: 0 64px;
+        height: 65px;
+        padding: 0 58px;
     }
     .card-info .btn-main img {
         width: 24px;

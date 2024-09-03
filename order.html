@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
+	<link rel="stylesheet" href="libs/fontawesome-free-5.12.0-web/css/all.min.css" />
+	<link rel="stylesheet" href="libs/fancybox-master/dist/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
+	<link rel="stylesheet" href="libs/vanillajs-datepicker-master/dist/css/datepicker.min.css">
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/main.css?ver=1.9" />
+	<link rel="stylesheet" href="css/media.css?ver=1.9" />
+</head>
+<body>
+
+	<div class="wrapper wrapper_page">
+
+		<div class="buttons-fixed">
+			<a href="#" class="btn-fixed"><img src="img/btn_search.svg" alt="alt"></a>
+			<a href="#" class="btn-fixed"><img src="img/btn_like.svg" alt="alt"></a>
+			<a href="#" class="btn-fixed"><img src="img/btn_tg.svg" alt="alt"></a>
+			<a href="#" class="btn-fixed"><img src="img/btn_user.svg" alt="alt"></a>
+		</div>
+
+		<ul class="socials-fixed">
+			<li><a href="#" target="_blank"><img src="img/ic_tg.svg" alt="alt"></a></li>
+			<li><a href="#" target="_blank"><img src="img/ic_vk.svg" alt="alt"></a></li>
+			<li><a href="#" target="_blank"><img src="img/ic_tel.svg" alt="alt"></a></li>
+			<li><a href="#" target="_blank"><img src="img/ic_wp.svg" alt="alt"></a></li>
+		</ul>
+ 
+		<header class="header default">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-5 col-2">
+						<div class="header__line">
+							<div class="header__item">
+								<p>Язык:</p>
+								<div class="item-dropdown item-dropdown_language">
+									<div class="item-dropdown__value">РУС <i class="far fa-chevron-down"></i></div>
+									<div class="item-dropdown__content">
+										<ul>
+											<li class="active"><a href="#">Русский</a></li>
+											<li><a href="#">English</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="header__item">
+								<p>Ставрополь, <br>ул. Объездная 2а </p>
+							</div>
+							<div class="header__item">
+								<p>Ваш город: </p>
+								<div class="item-dropdown item-dropdown_location">
+									<div class="item-dropdown__value">Ставрополь <i class="far fa-chevron-down"></i></div>
+									<div class="item-dropdown__modal">
+										<div class="item-dropdown__close"></div>
+										<div class="item-dropdown__head">Ваш город — <span>Ставрополь?</span></div>
+										<div class="item-dropdown__buttons">
+											<a href="#" class="btn-main close-location-modal">ДА</a>
+											<a href="#" class="btn-main btn-main_page btn-location-popup">выбрать <i class="fal fa-long-arrow-right"></i></a>
+										</div>
+									</div>
+									<div class="item-dropdown__popup">
+										<div class="item-dropdown__close"></div>
+										<div class="title-middle">Ваш город</div>
+										<ul>
+											<li class="active"><a href="#">Москва</a></li>
+											<li><a href="#">Санкт-Петербург</a></li>
+											<li><a href="#">Волгоград</a></li>
+											<li><a href="#">Саратов</a></li>
+											<li><a href="#">Воронеж</a></li>
+											<li><a href="#">Симферополь</a></li>
+											<li><a href="#">Севастополь</a></li>
+											<li><a href="#">Краснодар</a></li>
+											<li><a href="#">Ростов-на-Дону</a></li>
+										</ul>
+									</div>
+									<div class="item-dropdown__overlay"></div>
+								</div>
+							</div>
+						</div>
+						<div class="header__line">
+							<span class='sandwich sandwich_mobile'>
+								<span class='sw-topper'></span>
+								<span class='sw-bottom'></span>
+								<span class='sw-footer'></span>
+							</span> 
+							<ul class="menu">
+								<li class="menu__catalog">
+									<span class='sandwich sandwich_catalog'>
+										<span class='sw-topper'></span>
+										<span class='sw-bottom'></span>
+										<span class='sw-footer'></span>
+									</span>
+									<a href="#">каталог</a>
+									<div class="menu__dropdown">
+										<div class="menu__close"></div>
+										<ul class="menu__list">
+											<li class="menu__haschild">
+												<a href="#">Каталог товаров</a>
+												<ul>
+													<li><a href="#">Браслеты</a></li>
+													<li><a href="#">Анклеты</a></li>
+													<li><a href="#">Подвески на шею</a></li>
+													<li><a href="#">Подвески на телефон</a></li>
+													<li><a href="#">Обвесы на сумку</a></li>
+													<li><a href="#">Подвески на сумку</a></li>
+													<li><a href="#">Подвески в машину/дом</a></li>
+													<li><a href="#">Чокеры</a></li>
+													<li><a href="#">Колье</a></li>
+													<li><a href="#">Кулоны</a></li>
+													<li><a href="#">Маятники</a></li>
+													<li><a href="#">Серьги</a></li>
+													<li><a href="#">Кольца</a></li>
+													<li><a href="#">Перстни</a></li>
+													<li><a href="#">Фигурки</a></li>
+													<li><a href="#">Брелоки</a></li>
+													<li><a href="#">Камни</a></li>
+													<li><a href="#">Шары</a></li>
+													<li><a href="#">Шпильки для волос</a></li>
+													<li><a href="#">Бусы</a></li>
+													<li><a href="#">Четки</a></li>
+												</ul>
+											</li>
+											<li class="menu__haschild">
+												<a href="#">Каталог камней</a>
+												<ul>
+													<li><a href="#">Браслеты</a></li>
+													<li><a href="#">Анклеты</a></li>
+													<li><a href="#">Подвески на шею</a></li>
+													<li><a href="#">Подвески на телефон</a></li>
+													<li><a href="#">Обвесы на сумку</a></li>
+													<li><a href="#">Подвески на сумку</a></li>
+													<li><a href="#">Подвески в машину/дом</a></li>
+													<li><a href="#">Чокеры</a></li>
+													<li><a href="#">Колье</a></li>
+													<li><a href="#">Кулоны</a></li>
+													<li><a href="#">Маятники</a></li>
+													<li><a href="#">Серьги</a></li>
+													<li><a href="#">Кольца</a></li>
+													<li><a href="#">Перстни</a></li>
+													<li><a href="#">Фигурки</a></li>
+													<li><a href="#">Брелоки</a></li>
+													<li><a href="#">Камни</a></li>
+													<li><a href="#">Шары</a></li>
+													<li><a href="#">Шпильки для волос</a></li>
+													<li><a href="#">Бусы</a></li>
+													<li><a href="#">Четки</a></li>
+												</ul>
+											</li>
+											<li><a href="#">О компании</a></li>
+											<li><a href="#">Статьи</a></li>
+											<li><a href="#">Подарочный сертификат</a></li>
+											<li class="menu__haschild">
+												<a href="#">Информация для клиентов</a>
+												<ul>
+													<li><a href="#">Браслеты</a></li>
+													<li><a href="#">Анклеты</a></li>
+													<li><a href="#">Подвески на шею</a></li>
+													<li><a href="#">Подвески на телефон</a></li>
+													<li><a href="#">Обвесы на сумку</a></li>
+													<li><a href="#">Подвески на сумку</a></li>
+													<li><a href="#">Подвески в машину/дом</a></li>
+													<li><a href="#">Чокеры</a></li>
+													<li><a href="#">Колье</a></li>
+													<li><a href="#">Кулоны</a></li>
+													<li><a href="#">Маятники</a></li>
+													<li><a href="#">Серьги</a></li>
+													<li><a href="#">Кольца</a></li>
+													<li><a href="#">Перстни</a></li>
+													<li><a href="#">Фигурки</a></li>
+													<li><a href="#">Брелоки</a></li>
+													<li><a href="#">Камни</a></li>
+													<li><a href="#">Шары</a></li>
+													<li><a href="#">Шпильки для волос</a></li>
+													<li><a href="#">Бусы</a></li>
+													<li><a href="#">Четки</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+									<div class="menu__overlay"></div>
+								</li>
+								<li><a href="#">Индивидуальные украшения</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-2 col-8">
+						<a href="#" class="logo">
+							<img src="img/logo.svg" alt="alt">
+						</a>
+						<div class="logo-descr">Украшения ручной работы из натуральных камней </div>
+					</div>
+					<div class="col-lg-5 col-2">
+						<div class="header__line">
+							<div class="header__links">
+								<a href="tel:+79682675223" class="phone-main">+7 968 267 52 23</a>
+								<a href="#" class="link-page">заказать звонок</a>
+							</div>
+							<div class="header__buttons">
+								<a href="#" class="btn-header hidden-mob">
+									<img src="img/search.svg" alt="alt">
+								</a>
+								<a href="#" class="btn-header hidden-mob">
+									<img src="img/heart.svg" alt="alt">
+								</a>
+								<a href="#" class="btn-header">
+									<img src="img/basket.svg" alt="alt">
+								</a>
+								<a href="#" class="btn-header hidden-mob">
+									<img src="img/user.svg" alt="alt">
+								</a>
+							</div>
+						</div>
+						<div class="header__line">
+							<ul class="menu">
+								<li><a href="#">Браслеты</a></li>
+								<li><a href="#">Кольца</a></li>
+								<li><a href="#">Серьги</a></li>
+								<li><a href="#">ПодвескИ</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="menu-mobile">
+				<ul class="navigation">
+					<li class="navigation__haschild">
+						<a href="#">Каталог товаров</a>
+						<ul>
+							<li><a href="#">Браслеты</a></li>
+							<li><a href="#">Анклеты</a></li>
+							<li><a href="#">Подвески на шею</a></li>
+							<li><a href="#">Подвески на телефон</a></li>
+							<li><a href="#">Обвесы на сумку</a></li>
+							<li><a href="#">Подвески на сумку</a></li>
+							<li><a href="#">Подвески в машину/дом</a></li>
+							<li><a href="#">Чокеры</a></li>
+							<li><a href="#">Колье</a></li>
+							<li><a href="#">Кулоны</a></li>
+							<li><a href="#">Маятники</a></li>
+							<li><a href="#">Серьги</a></li>
+							<li><a href="#">Кольца</a></li>
+							<li><a href="#">Перстни</a></li>
+							<li><a href="#">Фигурки</a></li>
+							<li><a href="#">Брелоки</a></li>
+							<li><a href="#">Камни</a></li>
+							<li><a href="#">Шары</a></li>
+							<li><a href="#">Шпильки для волос</a></li>
+							<li><a href="#">Бусы</a></li>
+							<li><a href="#">Четки</a></li>
+						</ul>
+					</li>
+					<li class="navigation__haschild">
+						<a href="#">Каталог камней</a>
+						<ul>
+							<li><a href="#">Браслеты</a></li>
+							<li><a href="#">Анклеты</a></li>
+							<li><a href="#">Подвески на шею</a></li>
+							<li><a href="#">Подвески на телефон</a></li>
+							<li><a href="#">Обвесы на сумку</a></li>
+							<li><a href="#">Подвески на сумку</a></li>
+							<li><a href="#">Подвески в машину/дом</a></li>
+							<li><a href="#">Чокеры</a></li>
+							<li><a href="#">Колье</a></li>
+							<li><a href="#">Кулоны</a></li>
+							<li><a href="#">Маятники</a></li>
+							<li><a href="#">Серьги</a></li>
+							<li><a href="#">Кольца</a></li>
+							<li><a href="#">Перстни</a></li>
+							<li><a href="#">Фигурки</a></li>
+							<li><a href="#">Брелоки</a></li>
+							<li><a href="#">Камни</a></li>
+							<li><a href="#">Шары</a></li>
+							<li><a href="#">Шпильки для волос</a></li>
+							<li><a href="#">Бусы</a></li>
+							<li><a href="#">Четки</a></li>
+						</ul>
+					</li>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Статьи</a></li>
+					<li><a href="#">Подарочный сертификат</a></li>
+					<li class="navigation__haschild">
+						<a href="#">Информация для клиентов</a>
+						<ul>
+							<li><a href="#">Браслеты</a></li>
+							<li><a href="#">Анклеты</a></li>
+							<li><a href="#">Подвески на шею</a></li>
+							<li><a href="#">Подвески на телефон</a></li>
+							<li><a href="#">Обвесы на сумку</a></li>
+							<li><a href="#">Подвески на сумку</a></li>
+							<li><a href="#">Подвески в машину/дом</a></li>
+							<li><a href="#">Чокеры</a></li>
+							<li><a href="#">Колье</a></li>
+							<li><a href="#">Кулоны</a></li>
+							<li><a href="#">Маятники</a></li>
+							<li><a href="#">Серьги</a></li>
+							<li><a href="#">Кольца</a></li>
+							<li><a href="#">Перстни</a></li>
+							<li><a href="#">Фигурки</a></li>
+							<li><a href="#">Брелоки</a></li>
+							<li><a href="#">Камни</a></li>
+							<li><a href="#">Шары</a></li>
+							<li><a href="#">Шпильки для волос</a></li>
+							<li><a href="#">Бусы</a></li>
+							<li><a href="#">Четки</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="unit-dropdown">
+					<div class="unit-dropdown__head">Язык: <span>РУС</span></div>
+					<div class="unit-dropdown__content">
+						<div class="unit-dropdown__wrap">
+							<a href="#" class="item-language active">Русский</a>
+							<a href="#" class="item-language">English</a>
+						</div>
+					</div>
+				</div>
+				<div class="unit-dropdown">
+					<div class="unit-dropdown__head">Город: <span>Ставрополь</span></div>
+					<div class="unit-dropdown__content">
+						<ul class="unit-dropdown__list">
+							<li class="active"><a href="#">Москва</a></li>
+							<li><a href="#">Санкт-Петербург</a></li>
+							<li><a href="#">Волгоград</a></li>
+							<li><a href="#">Саратов</a></li>
+							<li><a href="#">Воронеж</a></li>
+							<li><a href="#">Симферополь</a></li>
+							<li><a href="#">Севастополь</a></li>
+							<li><a href="#">Краснодар</a></li>
+							<li><a href="#">Ростов-на-Дону</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="menu-mobile__bottom">
+					<div class="menu-mobile__location">Ставрополь, <br>ул. Объездная 2а </div>
+					<div class="header__links">
+						<a href="tel:+79682675223" class="phone-main">+7 968 267 52 23</a>
+						<a href="#" class="link-page">заказать звонок</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="page-order">
+			<div class="container">
+				<div class="content-section">
+					<ul class="breadcrumbs">
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Корзина</a></li>
+						<li>Оформление</li>
+					</ul>
+					<h1 class="title-section">Оформление</h1>
+					<div class="row">
+						<div class="col-lg-8">
+							<div class="orders-wrap">
+								<form class="form-order">
+									<div class="item-form">
+										<input type="text" placeholder="ФИО" required="required">
+									</div>
+									<div class="row">
+										<div class="col-lg-6">
+											<div class="item-form">
+												<input type="tel" placeholder="Номер телефона" class="input-phone" inputmode="numeric" required="required">
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<div class="item-form">
+												<input type="email" placeholder="E-mail" required="required">
+											</div>
+										</div>
+									</div>
+									<div class="title-middle">Способ доставки</div>
+									<div class="item-form item-form_location">
+										<input type="text" id="city-input" placeholder="Введите местонахождение" required="required">
+										<div class="icon-search"></div>
+									</div>
+									<div id="map-location"></div>
+									<div class="order-delivery">
+										<div class="order-delivery__title">Найдено 6 вариантов в Нижнем Новгороде:</div>
+										<div class="item-delivery">
+											<div class="item-delivery__image">
+												<img src="img/delivery1.svg" alt="alt">
+											</div>
+											<div class="item-delivery__content">
+												<div class="item-delivery__title">Ближайшее отделение почты</div>
+												<div class="item-delivery__descr">Россия, г. Нижний Новгород ул. Кирова, д. 145</div>
+												<div class="item-delivery__date">Доставка: 25 августа</div>
+											</div>
+											<div class="price-main">300 <span>₽</span></div>
+										</div>
+										<div class="item-delivery">
+											<div class="item-delivery__image">
+												<img src="img/delivery1.svg" alt="alt">
+											</div>
+											<div class="item-delivery__content">
+												<div class="item-delivery__title">Курьер до двери</div>
+												<div class="item-delivery__descr">Россия, г. Нижний Новгород ул. Кирова, д. 11</div>
+												<div class="item-delivery__date">Доставка: 25 августа</div>
+											</div>
+											<div class="price-main">500 <span>₽</span></div>
+										</div>
+										<div class="item-delivery">
+											<div class="item-delivery__image">
+												<img src="img/delivery2.svg" alt="alt">
+											</div>
+											<div class="item-delivery__content">
+												<div class="item-delivery__title">Ближайший пункт СДЭК</div>
+												<div class="item-delivery__descr">Россия, г. Нижний Новгород ул. Кирова, д. 165</div>
+												<div class="item-delivery__date">Доставка: 25 августа</div>
+											</div>
+											<div class="price-main">350 <span>₽</span></div>
+										</div>
+										<div class="item-delivery">
+											<div class="item-delivery__image">
+												<img src="img/delivery2.svg" alt="alt">
+											</div>
+											<div class="item-delivery__content">
+												<div class="item-delivery__title">Курьер до двери</div>
+												<div class="item-delivery__descr">Россия, г. Нижний Новгород ул. Кирова, д. 11</div>
+												<div class="item-delivery__date">Доставка: 25 августа</div>
+											</div>
+											<div class="price-main">700 <span>₽</span></div>
+										</div>
+										<div class="item-delivery">
+											<div class="item-delivery__image">
+												<img src="img/delivery3.svg" alt="alt">
+											</div>
+											<div class="item-delivery__content">
+												<div class="item-delivery__title">Ближайший пункт DPD</div>
+												<div class="item-delivery__descr">Россия, г. Нижний Новгород ул. Кирова, д. 185</div>
+												<div class="item-delivery__date">Доставка: 25 августа</div>
+											</div>
+											<div class="price-main">450 <span>₽</span></div>
+										</div>
+										<div class="item-delivery">
+											<div class="item-delivery__image">
+												<img src="img/delivery3.svg" alt="alt">
+											</div>
+											<div class="item-delivery__content">
+												<div class="item-delivery__title">Курьер до двери</div>
+												<div class="item-delivery__descr">Россия, г. Нижний Новгород ул. Кирова, д. 11</div>
+												<div class="item-delivery__date">Доставка: 25 августа</div>
+											</div>
+											<div class="price-main">800 <span>₽</span></div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="sidebar-order">
+								<div class="title-vertical">оформление покупки</div>
+								<div class="line-sidebar">
+									<div class="line-sidebar__title">Товаров:</div>
+									<div class="line-sidebar__value">5 шт.</div>
+								</div>
+								<div class="line-sidebar">
+									<div class="line-sidebar__title">На сумму:</div>
+									<div class="line-sidebar__priceold">28 000 ₽</div>
+								</div>
+								<div class="line-sidebar">
+									<div class="line-sidebar__title">Привилегия:</div>
+									<div class="line-sidebar__privilege">- 3 000 ₽</div>
+								</div>
+								<div class="line-sidebar">
+									<div class="line-sidebar__title">Итого:</div>
+									<div class="price-main">25 500 <span>₽</span></div>
+								</div>
+								<div class="promocode">
+									<div class="item-form">
+										<input type="text" placeholder="Промокод">
+									</div>
+								</div>
+								<a href="#" class="btn-main btn-main_page">к оплате <i class="fal fa-long-arrow-right"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3">
+						<a href="#" class="logo">
+							<img src="img/logo2.svg" alt="alt">
+						</a>
+						<div class="logo-descr">Украшения ручной работы из натуральных камней </div>
+						<ul class="list-socials">
+							<li><a href="#" target="_blank"><img src="img/vk.svg" alt="alt"></a></li>
+							<li><a href="#" target="_blank"><img src="img/tg.svg" alt="alt"></a></li>
+							<li><a href="#" target="_blank"><img src="img/yt.svg" alt="alt"></a></li>
+							<li><a href="#" target="_blank"><img src="img/wp.svg" alt="alt"></a></li>
+						</ul>
+					</div>
+					<div class="col-lg-2">
+						<ul class="footer__menu">
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Привилегии</a></li>
+							<li><a href="#">Доставка и оплата</a></li>
+							<li><a href="#">Гарантия и обен</a></li>
+							<li><a href="#">Статьи</a></li>
+							<li><a href="#">Камни</a></li>
+							<li><a href="#">Подарочный сертификат</a></li>
+							<li><a href="#">Возврат</a></li>
+							<li><a href="#">Услуги по ремонту</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-4">
+						<div class="footer__title">Каталог</div>
+						<div class="nav-wrap hidden-mob">
+							<ul class="footer__nav">
+								<li><a href="#">Браслеты</a></li>
+								<li><a href="#">Анклеты</a></li>
+								<li><a href="#">Подвески на шею</a></li>
+								<li><a href="#">Подвески на телефон</a></li>
+								<li><a href="#">Обвесы на сумку</a></li>
+								<li><a href="#">Подвески на сумку</a></li>
+								<li><a href="#">Подвески в машину/дом</a></li>
+								<li><a href="#">Чокеры</a></li>
+							</ul>
+							<ul class="footer__nav">
+								<li><a href="#">Колье</a></li>
+								<li><a href="#">Кулоны</a></li>
+								<li><a href="#">Маятники</a></li>
+								<li><a href="#">Серьги</a></li>
+								<li><a href="#">Кольца</a></li>
+								<li><a href="#">Перстни</a></li>
+								<li><a href="#">Фигурки</a></li>
+								<li><a href="#">Брелоки</a></li>
+							</ul>
+							<ul class="footer__nav">
+								<li><a href="#">Камни</a></li>
+								<li><a href="#">Шары</a></li>
+								<li><a href="#">Шпильки для волос</a></li>
+								<li><a href="#">Бусы</a></li>
+								<li><a href="#">Четки</a></li>
+							</ul>
+						</div>
+						<div class="nav-wrap show-mob">
+							<ul class="footer__nav">
+								<li><a href="#">Браслеты</a></li>
+								<li><a href="#">Анклеты</a></li>
+								<li><a href="#">Подвески на шею</a></li>
+								<li><a href="#">Подвески на телефон</a></li>
+								<li><a href="#">Обвесы на сумку</a></li>
+								<li><a href="#">Подвески на сумку</a></li>
+								<li><a href="#">Подвески в машину/дом</a></li>
+								<li><a href="#">Чокеры</a></li>
+								<li><a href="#">Колье</a></li>
+								<li><a href="#">Кулоны</a></li>
+							</ul>
+							<ul class="footer__nav">
+								<li><a href="#">Маятники</a></li>
+								<li><a href="#">Серьги</a></li>
+								<li><a href="#">Кольца</a></li>
+								<li><a href="#">Перстни</a></li>
+								<li><a href="#">Фигурки</a></li>
+								<li><a href="#">Брелоки</a></li>
+								<li><a href="#">Камни</a></li>
+								<li><a href="#">Шары</a></li>
+								<li><a href="#">Шпильки для волос</a></li>
+								<li><a href="#">Бусы</a></li>
+								<li><a href="#">Четки</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="footer__title">контакты</div>
+						<div class="item-contact">
+							<div class="item-contact__title">Телефон:</div>
+							<div class="line-contacts">
+								<a href="tel:+79682675223" class="phone-main">+7 968 267 52 23</a>
+								<ul class="socials-contact">
+									<li><a href="#"><img src="img/soc1.svg" alt="alt"></a></li>
+									<li><a href="#"><img src="img/soc2.svg" alt="alt"></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="item-contact">
+							<div class="item-contact__title">Адрес:</div>
+							<p>г. Ставрополь, ул.Объездная, 2а</p>
+						</div>
+						<div class="item-contact">
+							<div class="item-contact__title">Рабочее время:</div>
+							<p>пн-пт с 9:00 до 17:00 </p>
+						</div>
+						<div class="item-contact">
+							<div class="item-contact__title">E-mail:</div>
+							<a href="mailto:keklik-braslets@yandex.ru" class="link-main">keklik-braslets@yandex.ru</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<a href="#">Политика конфиденциальности</a>
+					<div class="copyright">KEKLIK © Copyright 2024</div>
+					<div class="create">Сделано в <a href="#"><img src="img/sheer.svg" alt="alt"></a></div>
+				</div>
+			</div> 
+		</footer>
+		
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	<script src="libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+	<script src="libs/fancybox-master/dist/jquery.fancybox.min.js"></script>
+	<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
+	<script src="libs/scroll2id/PageScroll2id.min.js"></script>
+	<script src="libs/mask/jquery.maskedinput.js"></script>
+	<script src="libs/vanillajs-datepicker-master/dist/js/datepicker-full.min.js"></script>
+	<script src="libs/vanillajs-datepicker-master/dist/js/locales/ru.js"></script>
+	<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
+	<script src="js/common.js?ver=1.9"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+	<script>
+$(document).ready(function () {
+    ymaps.ready(init);
+
+    function init() {
+        var myMap = new ymaps.Map('map-location', {
+            center: [56.326797, 44.006516],
+            zoom: 11
+        });
+
+        // Данные о городах и их метках
+        var cityLocations = {
+            "нижний новгород": [
+                { coords: [56.288304, 43.909574], path: 'img/pin1.svg' },
+                { coords: [56.351968, 43.999765], path: 'img/pin2.svg' }
+            ],
+            "москва": [
+                { coords: [55.751244, 37.618423], path: 'img/pin2.svg' },
+                { coords: [55.755826, 37.511119], path: 'img/pin3.svg' }
+            ],
+            "санкт-петербург": [
+                { coords: [59.9342802, 30.3350986], path: 'img/pin3.svg' },
+                { coords: [59.931058, 30.360909], path: 'img/pin1.svg' }
+            ],
+            "казань": [
+                { coords: [55.794270, 49.105098], path: 'img/pin1.svg' },
+                { coords: [55.796127, 49.111556], path: 'img/pin2.svg' }
+            ],
+            "екатеринбург": [
+                { coords: [56.838011, 60.597465], path: 'img/pin3.svg' },
+                { coords: [56.841068, 60.605923], path: 'img/pin2.svg' }
+            ]
+        };
+
+        var placemarks = {};
+
+        // Создаем все метки, но не добавляем их на карту сразу
+        Object.keys(cityLocations).forEach(function (city) {
+            placemarks[city] = cityLocations[city].map(function (location) {
+                return new ymaps.Placemark(location.coords, {}, {
+                    iconLayout: 'default#image',
+                    iconImageHref: location.path,
+                    iconImageSize: [45, 61],
+                    iconImageOffset: [-22, -61]
+                });
+            });
+        });
+
+        $('#city-input').on('input', function () {
+            var city = $(this).val().trim().toLowerCase(); // Приведение введенного текста к нижнему регистру
+
+            // Удаляем все метки с карты
+            myMap.geoObjects.removeAll();
+			$(".order-delivery").slideDown(200);
+            // Показать метки для введенного города
+            if (placemarks[city]) {
+                placemarks[city].forEach(function (placemark) {
+                    myMap.geoObjects.add(placemark);
+                });
+
+                // Центрируем карту на первом объекте города
+                myMap.setCenter(placemarks[city][0].geometry.getCoordinates(), 11);
+            }
+        });
+
+        myMap.controls.remove('searchControl');
+        myMap.behaviors.disable('scrollZoom');
+    }
+});
+	</script>
+	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>

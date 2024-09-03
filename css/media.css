@@ -1368,7 +1368,7 @@
         margin-bottom: 10px;
     }
     .item-order {
-        padding: 20px 0;
+        padding: 20px 15px;
         gap: 0;
         display: block;
         border-width: 1.5px;
@@ -1417,6 +1417,7 @@
         padding-bottom: 30px;
         margin-left: 0;
         top: 0;
+        margin-top: 25px;
         border: 1.50px solid rgba(190, 176, 150, 0.32);
         position: static;
     }
@@ -1444,7 +1445,6 @@
     .orders-wrap {
         max-width: 930px;
     }
-
 
     .page-order {
         padding-bottom: 60px;
@@ -1487,9 +1487,6 @@
     }
     .item-delivery__date {
         margin-top: 24px;
-    }
-    .page-order .orders-wrap {
-        padding-bottom: 25px;
     }
 }
 

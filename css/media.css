@@ -1356,6 +1356,141 @@
     .photos-wrap {
         margin: 24px 0;
     }
+
+
+    .page-basket {
+        padding-bottom: 60px;
+    }
+    .head-basket {
+        margin-bottom: 15px;
+    }
+    .head-basket .link-main {
+        margin-bottom: 10px;
+    }
+    .item-order {
+        padding: 20px 0;
+        gap: 0;
+        display: block;
+        border-width: 1.5px;
+    }
+    .item-order__image {
+        width: 220px;
+        height: 197px;
+        margin-bottom: 20px;
+    }
+    .item-order__title {
+        font-size: 18px;
+        margin-bottom: 16px;
+        max-width: 459px;
+    }
+    .item-order__info strong {
+        margin-right: 4px;
+    }
+    .item-order__info p {
+        margin-bottom: 8px;
+    }
+    .quantity {
+        width: 112px;
+        height: 57px;
+    }
+    .quantity-button {
+        font-size: 32px;
+    }
+    .quantity input {
+        font-size: 18px;
+    }
+    .item-order__bottom {
+        padding-top: 32px;
+    }
+    .item-order__remove {
+        width: 14px;
+        height: 14px;
+        top: 15px;
+        right: 15px;
+    }
+    .restore-order {
+        padding: 32px;
+    }
+    .sidebar-order {
+        padding: 16px 34px;
+        padding-left: 60px;
+        padding-bottom: 30px;
+        margin-left: 0;
+        top: 0;
+        border: 1.50px solid rgba(190, 176, 150, 0.32);
+        position: static;
+    }
+    .sidebar-order::before {
+        width: 2px;
+        bottom: 16px;
+        left: 17px;
+        top: 207px;
+    }
+    .line-sidebar {
+        padding: 16px 0;
+        border-bottom: 1px solid rgba(190, 176, 150, 0.32);
+    }
+    .sidebar-order .promocode {
+        margin-top: 15px;
+    }
+    .sidebar-order .btn-main {
+        margin-top: 28px;
+        padding: 0 10px;
+    }
+    .sidebar-order .title-vertical {
+        top: 180px;
+        left: 10px;
+    }
+    .orders-wrap {
+        max-width: 930px;
+    }
+
+
+    .page-order {
+        padding-bottom: 60px;
+    }
+    .page-order .title-section {
+        margin-bottom: 15px;
+    }
+    .orders-wrap .title-middle {
+        margin: 30px 0;
+    }
+    .item-form_location input {
+        padding-right: 35px;
+    }
+    .icon-search {
+        width: 40px;
+        background-size: 24px auto;
+        background-position: center;
+    }
+    #map-location {
+        height: 380px;
+        margin-top: 25px;
+    }
+    .order-delivery {
+        padding-top: 64px;
+    }
+    .order-delivery__title {
+        margin-bottom: 24px;
+        font-size: 20px;
+    }
+    .item-delivery {
+        padding: 32px;
+        gap: 32px;
+        border-bottom: 1.50px solid rgba(190, 176, 150, 0.32);
+    }
+    .item-delivery__image {
+        width: 125px;
+    }
+    .item-delivery__title {
+        font-size: 18px;
+    }
+    .item-delivery__date {
+        margin-top: 24px;
+    }
+    .page-order .orders-wrap {
+        padding-bottom: 25px;
+    }
 }
 
 /* Small Devices, Tablets */

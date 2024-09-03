@@ -599,6 +599,37 @@ $(".item-dropdown__overlay, .item-dropdown__close").click(function(e) {
 		$(element).trigger('beforeChange', [$(element).slick('getSlick'), 0, 0]);
 	});
 
+	jQuery('.quantity').each(function() {
+		var spinner = jQuery(this),
+		input = spinner.find('input[type="number"]'),
+		btnUp = spinner.find('.quantity-up'),
+		btnDown = spinner.find('.quantity-down'),
+		min = input.attr('min'),
+		max = input.attr('max');
+
+		btnUp.click(function() {
+			var oldValue = parseFloat(input.val());
+			if (oldValue >= max) {
+				var newVal = oldValue;
+			} else {
+				var newVal = oldValue + 1;
+			}
+			spinner.find("input").val(newVal);
+			spinner.find("input").trigger("change");
+		});
+
+		btnDown.click(function() {
+			var oldValue = parseFloat(input.val());
+			if (oldValue <= min) {
+				var newVal = oldValue;
+			} else {
+				var newVal = oldValue - 1;
+			}
+			spinner.find("input").val(newVal);
+			spinner.find("input").trigger("change");
+		});
+	});
+
 	$(".input-phone").mask("+7 (999) 999-99-99");
 
 

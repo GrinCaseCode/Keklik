@@ -326,6 +326,7 @@
         margin-left: auto;
         margin-right: auto;
     }
+    .radio label input,
     .checkbox label input {
         position: absolute;
         z-index: -1;
@@ -334,6 +335,7 @@
         opacity: 0 !important;
         margin: 12px 2px 0 7px !important;
     }
+    .radio label > span,
     .checkbox label > span {
         padding: 4px 0 0 29px;
     }
@@ -1402,6 +1404,7 @@
     .item-order__bottom {
         padding-top: 32px;
     }
+    .item-catalog__remove,
     .item-order__remove {
         width: 14px;
         height: 14px;
@@ -1487,6 +1490,230 @@
     }
     .item-delivery__date {
         margin-top: 24px;
+    }
+
+    .page-information {
+        padding-bottom: 60px;
+    }
+    .tabs-page {
+        columns: 2;
+        padding-top: 0;
+        border: none;
+    }
+    .tabs-page li {
+        margin-bottom: 24px;
+    }
+    .page-information .tab-container-page p,
+    .page-information .tab-container-page .title-small {
+        margin: 24px 0;
+    }
+    .page-information .tab-container-page .title-middle {
+        margin-bottom: 24px;
+    }
+    .page-information .tab-container-page {
+        margin-top: 30px;
+        margin-left: 0;
+    }
+    .list-payments {
+        gap: 26px;
+    }
+    .list-payments img {
+        height: 24px;
+    }
+    .page-information .tab-container-page ul li {
+        padding-left: 24px;
+        margin-bottom: 8px;
+    }
+    .page-information .tab-container-page ul li::before {
+        width: 13px;
+        height: 13px;
+        top: 5px;
+    }
+
+    .page-authorization {
+        padding-top: 105px;
+        padding-bottom: 170px;
+        background-position: left;
+    }
+    .page-authorization .title-section {
+        font-size: 34px;
+        margin-bottom: 42px;
+    }
+    .form-main {
+        padding: 20px 22px;
+        padding-left: 52px;
+        padding-bottom: 38px;
+        max-width: 583px;
+        border-width: 1.5px;
+    }
+    .form-main .btn-main {
+        margin-top: 34px;
+        padding: 0 10px;
+    }
+    .form-main__line {
+        padding-top: 13px;
+        gap: 15px 10px;
+        flex-wrap: wrap;
+    }
+    .form-main__links {
+        font-size: 11px;
+    }
+    .form-main__links li::after {
+        width: 1px;
+        height: 12px;
+        margin: 0 6px;
+    }
+    .form-main .title-vertical {
+        top: 137px;
+        left: 10px;
+    }
+    .form-main::before {
+        top: 154px;
+        bottom: 14px;
+        left: 17px;
+        width: 2px;
+    }
+    .form-main__bottom {
+        padding-top: 16px;
+        font-size: 12px;
+    }
+    .form-main .item-form + .checkbox {
+        margin-top: 23px;
+        max-width: 262px;
+    }
+    .page-authorization_recover .form-main .btn-main {
+        margin-top: 20px;
+    }
+    .image-profile {
+        width: 124px;
+        height: 124px;
+        margin-bottom: 32px;
+    }
+    .radios-wrap {
+        gap: 32px;
+        margin-bottom: 16px;
+    }
+    .radio label > span:before,
+    .radio label > span:after {
+        width: 21px;
+        height: 21px;
+    }
+    .radio label > span {
+        padding-top: 2px;
+    }
+
+    .link-personal img {
+        width: 15px;
+        height: auto;
+    }
+    .nav-personal {
+        max-width: 100%;
+        padding: 15px 0;
+        gap: 20px;
+        border: none;
+        display: flex;
+    }
+    .nav-personal .image-profile {
+        margin: 0;
+    }
+    .link-personal li {
+        margin-bottom: 22px;
+    }
+    .link-personal a {
+        gap: 16px;
+        font-size: 14px;
+    }
+    .personal-delivery {
+        gap: 12px;
+        padding: 14px 0;
+        border-width: 0.5px;
+    }
+    .personal-delivery__image {
+        width: 75px;
+    }
+    .personal-delivery__title {
+        font-size: 13px;
+    }
+    .personal-delivery__value {
+        font-size: 14px;
+    }
+    .item-card__remove,
+    .personal-delivery__remove {
+        width: 12px;
+        height: 12px;
+    }
+    .page-personal .title-middle {
+        margin-bottom: 30px;
+    }
+    .item-card {
+        margin-bottom: 42px;
+        border-radius: 16px;
+    }
+    .item-card__image img {
+        height: 25px;
+    }
+    .item-card__image {
+        padding: 20px;
+    }
+    .item-card__line {
+        height: 40px;
+        margin-top: 80px;
+    }
+    .item-card__bottom {
+        padding: 15px 18px;
+    }
+    .item-card__number {
+        font-size: 18px;
+    }
+    .item-card__remove {
+        top: 20px;
+        right: 20px;
+    }
+    .content-personal {
+        margin-left: 0;
+    }
+    .col_locations .btn-main {
+        margin-top: 25px;
+        min-width: 100%;
+    }
+    .row.row_big > div {
+        padding: 0 5px;
+    }
+    .row.row_big {
+        margin: 0 -5px;
+    }
+    .page-personal {
+        padding-bottom: 60px;
+    }
+    .row div.col_locations {
+        padding-bottom: 30px;
+    }
+    .item-card .radio {
+        font-size: 13px;
+    }
+    .unit-personal {
+        padding-bottom: 16px;
+        margin-bottom: 16px;
+        max-width: 558px;
+    }
+    .unit-personal__title {
+        margin-bottom: 4px;
+    }
+    .unit-personal__value {
+        font-size: 18px;
+    }
+    .unit-personal + .btn-main {
+        margin-top: 30px;
+    }
+    .page-personal_information  {
+        background-image: none;   
+    }
+    .btn-main.btn-main_personal {
+        width: 100%;
+    }
+    .head-personal {
+        margin-bottom: 30px;
+        display: block;
     }
 }
 

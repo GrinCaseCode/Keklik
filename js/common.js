@@ -209,6 +209,15 @@ $(".close-location-modal").click(function(e) {
 });
 
 
+$('.tabs-page li a').click(function(event) {
+	event.preventDefault();
+	$(this).parent().parent().find("li").removeClass('active');
+	$(this).parent().addClass('active');
+	$(".tab-pane-page").fadeOut(0);
+	var selectTab = $(this).attr("href");
+	$(selectTab).fadeIn(200);
+});
+
 $(document).mouseup(function (e) {
     var modalLocation = $(".item-dropdown__modal");
     if (modalLocation.has(e.target).length === 0){

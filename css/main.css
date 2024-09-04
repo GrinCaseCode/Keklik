@@ -3169,10 +3169,14 @@ form {
 .page-information {
 	padding-bottom: 8.54vw;
 }
-.tabs-page {
+.tabs-page-wrap {
 	padding-top: 1.67vw;
 	min-height: 100%;
 	border-right: 0.078vw solid rgba(190, 176, 150, 0.32);
+}
+.tabs-page {
+	top: 9vw;
+	position: sticky;
 }
 .tabs-page li {
 	margin-bottom: 2.19vw;

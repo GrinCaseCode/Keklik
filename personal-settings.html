@@ -354,244 +354,134 @@
 			</div>
 		</header>
 
-		<section class="page-catalog">
+		<section class="page-personal">
 			<div class="container">
-				<ul class="breadcrumbs">
-					<li><a href="#">Главная</a></li>
-					<li>Каталог камней</li>
-				</ul>
-				<h1 class="title-section">Каталог камней</h1>
-				<div class="head-catalog">
-					<div class="search-page">
-						<form>
-							<input type="text" placeholder="Поиск по названию" required="required">
-							<button class="search-page__btn"></button>
-						</form>
-					</div>
-					<div class="dropdown-filter dropdown-filter_select">
-						<div class="dropdown-filter__head">По возрастанию А-Я</div>
-						<div class="dropdown-filter__content">
-							<div class="dropdown-filter__list">
-								<div class="value-select">По возрастанию А-Я</div>
-								<div class="value-select">По спаданию А-Я</div>
-								<div class="value-select">По цене</div>
+				<div class="content-section">
+					<ul class="breadcrumbs">
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Личный кабинет</a></li>
+						<li>Настройки</li>
+					</ul>
+					<div class="row">
+						<div class="col-lg-3">
+							<div class="nav-personal">
+								<div class="image-profile">
+									<img src="img/person1.jpg" alt="alt">
+								</div>
+								<ul class="link-personal">
+									<li>
+										<a href="#">
+											<img src="img/ic_personal1.svg" alt="alt">
+											<span>Избранное</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/ic_personal2.svg" alt="alt">
+											<span>История заказов</span>
+										</a>
+									</li>
+									<li class="active">
+										<a href="#">
+											<img src="img/ic_personal3.svg" alt="alt">
+											<span>Настройки</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/ic_personal4.svg" alt="alt">
+											<span>Личные данные</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-9">
+							<div class="content-personal">
+								<div class="row row_big">
+									<div class="col-lg-6 col_locations">
+										<h2 class="title-middle">Адреса доставки</h2>
+										<div class="personal-delivery">
+											<div class="personal-delivery__image">
+												<img src="img/delivery1.svg" alt="alt">
+											</div>
+											<div class="personal-delivery__content">
+												<div class="personal-delivery__title">Отделение Почты России</div>
+												<div class="personal-delivery__value">Россия, г.Подольск, ул.Кирова, 145</div>
+											</div>
+											<div class="personal-delivery__remove"></div>
+										</div>
+										<div class="personal-delivery">
+											<div class="personal-delivery__image">
+												<img src="img/delivery2.svg" alt="alt">
+											</div>
+											<div class="personal-delivery__content">
+												<div class="personal-delivery__title">Курьер до двери</div>
+												<div class="personal-delivery__value">Россия, г.Подольск, ул.Кирова, 12</div>
+											</div>
+											<div class="personal-delivery__remove"></div>
+										</div>
+										<div class="personal-delivery">
+											<div class="personal-delivery__image">
+												<img src="img/delivery1.svg" alt="alt">
+											</div>
+											<div class="personal-delivery__content">
+												<div class="personal-delivery__title">Отделение Почты России</div>
+												<div class="personal-delivery__value">Россия, г.Подольск, ул.Кирова, 145</div>
+											</div>
+											<div class="personal-delivery__remove"></div>
+										</div>
+										<div class="personal-delivery">
+											<div class="personal-delivery__image">
+												<img src="img/delivery2.svg" alt="alt">
+											</div>
+											<div class="personal-delivery__content">
+												<div class="personal-delivery__title">Курьер до двери</div>
+												<div class="personal-delivery__value">Россия, г.Подольск, ул.Кирова, 12</div>
+											</div>
+											<div class="personal-delivery__remove"></div>
+										</div>
+										<a href="#" class="btn-main btn-main_page">редактировать <i class="fal fa-long-arrow-right"></i></a>
+									</div>
+									<div class="col-lg-6">
+										<div class="title-middle">Привязанные карты</div>
+										<div class="item-card">
+											<div class="item-card__image">
+												<img src="img/card1.svg" alt="alt">
+											</div>
+											<div class="item-card__line"></div>
+											<div class="item-card__bottom">
+												<div class="radio">
+													<label>
+														<input type="radio" name="card" checked="checked"/>
+														<span>Основная</span>
+													</label>
+												</div>
+												<div class="item-card__number">**** ***** **** 0398</div>
+											</div>
+											<div class="item-card__remove"></div>
+										</div>
+										<div class="item-card">
+											<div class="item-card__image">
+												<img src="img/card2.svg" alt="alt">
+											</div>
+											<div class="item-card__line"></div>
+											<div class="item-card__bottom">
+												<div class="radio">
+													<label>
+														<input type="radio" name="card"/>
+														<span>Сделать основной</span>
+													</label>
+												</div>
+												<div class="item-card__number">**** ***** **** 0398</div>
+											</div>
+											<div class="item-card__remove"></div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-					<ul class="views-catalog">
-						<li>
-							<a href="#" class="item-view">
-								<img src="img/view_list.svg" alt="alt">
-							</a>
-						</li>
-						<li>
-							<a href="#" class="item-view active">
-								<img src="img/view_grid.svg" alt="alt">
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div class="row row_main">
-					<div class="col-lg-3 col-md-4">
-						<a href="#" class="item-catalog item-catalog_main">
-							<span class="item-catalog__image">
-								<img src="img/catalog_main1.jpg" alt="alt">
-							</span>
-							<span class="item-catalog__content">
-								<span class="item-catalog__head">
-									<span class="item-catalog__title">Авантюрин <i class="fal fa-long-arrow-right"></i></span>
-								</span>
-							</span>
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-4">
-						<a href="#" class="item-catalog item-catalog_main">
-							<span class="item-catalog__image">
-								<img src="img/catalog_main2.jpg" alt="alt">
-							</span>
-							<span class="item-catalog__content">
-								<span class="item-catalog__head">
-									<span class="item-catalog__title">Азурмалахит <i class="fal fa-long-arrow-right"></i></span>
-								</span>
-							</span>
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-4">
-						<a href="#" class="item-catalog item-catalog_main">
-							<span class="item-catalog__image">
-								<img src="img/catalog_main3.jpg" alt="alt">
-							</span>
-							<span class="item-catalog__content">
-								<span class="item-catalog__head">
-									<span class="item-catalog__title">Аквакварц <i class="fal fa-long-arrow-right"></i></span>
-								</span>
-							</span>
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-4">
-						<a href="#" class="item-catalog item-catalog_main">
-							<span class="item-catalog__image">
-								<img src="img/catalog_main4.jpg" alt="alt">
-							</span>
-							<span class="item-catalog__content">
-								<span class="item-catalog__head">
-									<span class="item-catalog__title">Аквамарин <i class="fal fa-long-arrow-right"></i></span>
-								</span>
-							</span>
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-4">
-						<a href="#" class="item-catalog item-catalog_main">
-							<span class="item-catalog__image">
-								<img src="img/catalog_main5.jpg" alt="alt">
-							</span>
-							<span class="item-catalog__content">
-								<span class="item-catalog__head">
-									<span class="item-catalog__title">Аметрин <i class="fal fa-long-arrow-right"></i></span>
-								</span>
-							</span>
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-4">
-						<a href="#" class="item-catalog item-catalog_main">
-							<span class="item-catalog__image">
-								<img src="img/catalog_main6.jpg" alt="alt">
-							</span>
-							<span class="item-catalog__content">
-								<span class="item-catalog__head">
-									<span class="item-catalog__title">Ангелит <i class="fal fa-long-arrow-right"></i></span>
-								</span>
-							</span>
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-4">
-						<a href="#" class="item-catalog item-catalog_main">
-							<span class="item-catalog__image">
-								<img src="img/catalog_main7.jpg" alt="alt">
-							</span>
-							<span class="item-catalog__content">
-								<span class="item-catalog__head">
-									<span class="item-catalog__title">Апатит <i class="fal fa-long-arrow-right"></i></span>
-								</span>
-							</span>
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-4">
-						<a href="#" class="item-catalog item-catalog_main">
-							<span class="item-catalog__image">
-								<img src="img/catalog_main8.jpg" alt="alt">
-							</span>
-							<span class="item-catalog__content">
-								<span class="item-catalog__head">
-									<span class="item-catalog__title">Адуляр <i class="fal fa-long-arrow-right"></i></span>
-								</span>
-							</span>
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-4">
-						<a href="#" class="item-catalog item-catalog_main">
-							<span class="item-catalog__image">
-								<img src="img/catalog_main9.jpg" alt="alt">
-							</span>
-							<span class="item-catalog__content">
-								<span class="item-catalog__head">
-									<span class="item-catalog__title">Амазонит <i class="fal fa-long-arrow-right"></i></span>
-								</span>
-							</span>
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-4">
-						<a href="#" class="item-catalog item-catalog_main">
-							<span class="item-catalog__image">
-								<img src="img/catalog_main10.jpg" alt="alt">
-							</span>
-							<span class="item-catalog__content">
-								<span class="item-catalog__head">
-									<span class="item-catalog__title">Белый нефрит <i class="fal fa-long-arrow-right"></i></span>
-								</span>
-							</span>
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-4">
-						<a href="#" class="item-catalog item-catalog_main">
-							<span class="item-catalog__image">
-								<img src="img/catalog_main11.jpg" alt="alt">
-							</span>
-							<span class="item-catalog__content">
-								<span class="item-catalog__head">
-									<span class="item-catalog__title">Берилл <i class="fal fa-long-arrow-right"></i></span>
-								</span>
-							</span>
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-4">
-						<a href="#" class="item-catalog item-catalog_main">
-							<span class="item-catalog__image">
-								<img src="img/catalog_main12.jpg" alt="alt">
-							</span>
-							<span class="item-catalog__content">
-								<span class="item-catalog__head">
-									<span class="item-catalog__title">Бирюза <i class="fal fa-long-arrow-right"></i></span>
-								</span>
-							</span>
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-4">
-						<a href="#" class="item-catalog item-catalog_main">
-							<span class="item-catalog__image">
-								<img src="img/catalog_main13.jpg" alt="alt">
-							</span>
-							<span class="item-catalog__content">
-								<span class="item-catalog__head">
-									<span class="item-catalog__title">Бычий глаз <i class="fal fa-long-arrow-right"></i></span>
-								</span>
-							</span>
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-4">
-						<a href="#" class="item-catalog item-catalog_main">
-							<span class="item-catalog__image">
-								<img src="img/catalog_main14.jpg" alt="alt">
-							</span>
-							<span class="item-catalog__content">
-								<span class="item-catalog__head">
-									<span class="item-catalog__title">Варисцит <i class="fal fa-long-arrow-right"></i></span>
-								</span>
-							</span>
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-4">
-						<a href="#" class="item-catalog item-catalog_main">
-							<span class="item-catalog__image">
-								<img src="img/catalog_main15.jpg" alt="alt">
-							</span>
-							<span class="item-catalog__content">
-								<span class="item-catalog__head">
-									<span class="item-catalog__title">Вулканит <i class="fal fa-long-arrow-right"></i></span>
-								</span>
-							</span>
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-4">
-						<a href="#" class="item-catalog item-catalog_main">
-							<span class="item-catalog__image">
-								<img src="img/catalog_main16.jpg" alt="alt">
-							</span>
-							<span class="item-catalog__content">
-								<span class="item-catalog__head">
-									<span class="item-catalog__title">Гагат <i class="fal fa-long-arrow-right"></i></span>
-								</span>
-							</span>
-						</a>
-					</div>
-				</div>
-				<div class="pager">
-					<div class="pager__number">04</div>
-					<div class="pager__bar">
-						<div class="pager__progress" style="width: 33%;"></div>
-					</div>
-					<div class="pager__arrow"><i class="fal fa-long-arrow-left"></i></div>
-					<div class="pager__arrow"><i class="fal fa-long-arrow-right"></i></div>
 				</div>
 			</div>
 		</section>

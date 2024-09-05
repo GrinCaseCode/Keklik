@@ -1726,6 +1726,125 @@
     .form-main__line .checkbox {
         font-size: 12px;
     }
+
+
+    .page-personal .tabs a {
+        padding: 0 10px;
+        display: flex;
+    }
+    .item-history__line {
+        padding-bottom: 24px;
+    }
+    .item-history {
+        margin-bottom: 16px;
+        padding-bottom: 8px;
+        border-width: 1px;
+    }
+    .item-history__date {
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+    .item-history__title {
+        font-size: 20px;
+    }
+    .item-history__status {
+        padding: 0 8px;
+        font-size: 11px;
+    }
+    .delivery-history {
+        gap: 16px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .delivery-history__image {
+        width: 80px;
+    }
+    .delivery-history__title {
+        font-size: 13px;
+    }
+    .delivery-history__value {
+        font-size: 16px;
+    }
+    .item-history__price {
+        font-size: 14px;
+    }
+    .item-history__price p {
+        margin-bottom: 4px;
+    }
+    .item-history .btn-main {
+        height: 49px;
+        gap: 10px;
+        padding: 0px 29px;
+    }
+    .item-history .link-main {
+        font-size: 14px;
+    }
+    .page-personal .tabs {
+        margin: -5px -3px;
+        gap: 0;
+        flex-wrap: wrap;
+    }
+    .page-personal .tabs li {
+        width: 50%;
+        padding: 5px 3px;
+    }
+    .item-history__line {
+        flex-wrap: wrap;
+    }
+
+
+    #map {
+        height: 380px;
+        margin-top: 25px;
+    }
+    .page-contacts {
+        padding-bottom: 60px;
+    }
+    .page-contacts .title-section {
+        margin-bottom: 30px;
+    }
+    .col_contact {
+        order: -1;
+    }
+    .contacts-main {
+        padding: 28px 20px;
+        padding-left: 55px;
+        border-width: 1.5px;
+    }
+    .contacts-main::before {
+        top: 205px;
+        left: 20px;
+        bottom: 16px;
+        width: 2px;
+    }
+    .contacts-main__item {
+        padding-bottom: 16px;
+        margin-bottom: 16px;
+        border-width: 0.5px;
+    }
+    .contacts-main__item:last-child {
+        padding-bottom: 4px;
+        margin-bottom: 0;
+    }
+    .contacts-main__title {
+        margin-bottom: 4px;
+    }
+    .contacts-main__value {
+        font-size: 16px;
+    }
+    .contacts-main__line {
+        gap: 8px;
+    }
+    .socials-contact img {
+        width: 20px;
+    }
+    .list-socials {
+        padding-top: 12px;
+    }
+    .contacts-main .title-vertical {
+        top: 183px;
+        left: 9px;
+    }
 }
 
 /* Small Devices, Tablets */

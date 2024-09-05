@@ -1812,8 +1812,8 @@
         border-width: 1.5px;
     }
     .contacts-main::before {
-        top: 205px;
-        left: 20px;
+        top: 140px;
+        left: 16px;
         bottom: 16px;
         width: 2px;
     }
@@ -1842,7 +1842,7 @@
         padding-top: 12px;
     }
     .contacts-main .title-vertical {
-        top: 183px;
+        top: 127px;
         left: 9px;
     }
 }

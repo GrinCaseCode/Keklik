@@ -22,7 +22,7 @@ body textarea:focus:required:invalid {
 body input:required:valid,
 body textarea:required:valid {
 	 
-}
+} 
 body {
 	font-family: 'Raleway', sans-serif;
 	font-size: 0.833vw;
